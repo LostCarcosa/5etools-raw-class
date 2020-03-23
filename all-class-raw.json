@@ -1,58 +1,40 @@
 {
 	"class": [
-		{ 
-			"name": "Bard",
+		{
+			"name": "Barbarian",
 			"source": "PHB",
-			"page": 51,
+			"page": 46,
 			"srd": true,
 			"hd": {
 				"number": 1,
-				"faces": 8
+				"faces": 12
 			},
 			"proficiency": [
-				"dex",
-				"cha"
+				"str",
+				"con"
 			],
-			"spellcastingAbility": "cha",
-			"casterProgression": "full",
 			"startingProficiencies": {
 				"armor": [
-					"light"
+					"light",
+					"medium",
+					"shields"
 				],
 				"weapons": [
 					"simple",
-					"hand crossbows",
-					"longswords",
-					"rapiers",
-					"shortswords"
-				],
-				"tools": [
-					"three musical instruments of your choice"
+					"martial"
 				],
 				"skills": [
 					{
 						"choose": {
 							"from": [
-								"athletics",
-								"acrobatics",
-								"sleight of hand",
-								"stealth",
-								"arcana",
-								"history",
-								"investigation",
-								"nature",
-								"religion",
 								"animal handling",
-								"insight",
-								"medicine",
-								"perception",
-								"survival",
-								"deception",
+								"athletics",
 								"intimidation",
-								"performance",
-								"persuasion"
+								"nature",
+								"perception",
+								"survival"
 							],
-							"count": 3
+							"count": 2
 						}
 					}
 				]
@@ -60,375 +42,172 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) a {@item rapier|phb}, (b) a {@item longsword|phb}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item diplomat's pack|phb} or (b) an {@item entertainer's pack|phb}",
-					"(a) a {@item lute|phb} or (b) any other {@filter musical instrument|items|miscellaneous=mundane|type=instrument}",
-					"{@item Leather armor|phb}, and a {@item dagger|phb}"
+					"(a) a {@item greataxe|phb} or (b) any {@filter martial melee weapon|items|source=phb|category=basic|type=martial weapon;melee weapon=sand}",
+					"(a) two {@item handaxe|phb|handaxes} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"An {@item explorer's pack|phb}, and four {@item javelin|phb|javelins}"
 				],
-				"goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
+				"goldAlternative": "{@dice 2d4×10|2d4 × 10|Starting Gold}"
 			},
 			"multiclassing": {
 				"requirements": {
-					"cha": 13
+					"str": 13
 				},
 				"proficienciesGained": {
 					"armor": [
-						"light"
+						"shields"
 					],
-					"skills": [
-						{
-							"choose": {
-								"from": [
-									"athletics",
-									"acrobatics",
-									"sleight of hand",
-									"stealth",
-									"arcana",
-									"history",
-									"investigation",
-									"nature",
-									"religion",
-									"animal handling",
-									"insight",
-									"medicine",
-									"perception",
-									"survival",
-									"deception",
-									"intimidation",
-									"performance",
-									"persuasion"
-								],
-								"count": 1
-							}
-						}
-					],
-					"tools": [
-						"one musical instrument of your choice"
+					"weapons": [
+						"simple",
+						"martial"
 					]
 				}
 			},
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=bard}",
-						"{@filter Spells Known|spells|class=bard}"
+						"Rages",
+						"Rage Damage"
 					],
 					"rows": [
 						[
-							2,
-							4
+							"2",
+							{
+								"type": "bonus",
+								"value": 2
+							}
 						],
 						[
-							2,
-							5
+							"2",
+							{
+								"type": "bonus",
+								"value": 2
+							}
 						],
 						[
-							2,
-							6
+							"3",
+							{
+								"type": "bonus",
+								"value": 2
+							}
 						],
 						[
-							3,
-							7
+							"3",
+							{
+								"type": "bonus",
+								"value": 2
+							}
 						],
 						[
-							3,
-							8
+							"3",
+							{
+								"type": "bonus",
+								"value": 2
+							}
 						],
 						[
-							3,
-							9
+							"4",
+							{
+								"type": "bonus",
+								"value": 2
+							}
 						],
 						[
-							3,
-							10
+							"4",
+							{
+								"type": "bonus",
+								"value": 2
+							}
 						],
 						[
-							3,
-							11
+							"4",
+							{
+								"type": "bonus",
+								"value": 2
+							}
 						],
 						[
-							3,
-							12
+							"4",
+							{
+								"type": "bonus",
+								"value": 3
+							}
 						],
 						[
-							4,
-							14
+							"4",
+							{
+								"type": "bonus",
+								"value": 3
+							}
 						],
 						[
-							4,
-							15
+							"4",
+							{
+								"type": "bonus",
+								"value": 3
+							}
 						],
 						[
-							4,
-							15
+							"5",
+							{
+								"type": "bonus",
+								"value": 3
+							}
 						],
 						[
-							4,
-							16
+							"5",
+							{
+								"type": "bonus",
+								"value": 3
+							}
 						],
 						[
-							4,
-							18
+							"5",
+							{
+								"type": "bonus",
+								"value": 3
+							}
 						],
 						[
-							4,
-							19
+							"5",
+							{
+								"type": "bonus",
+								"value": 3
+							}
 						],
 						[
-							4,
-							19
+							"5",
+							{
+								"type": "bonus",
+								"value": 4
+							}
 						],
 						[
-							4,
-							20
+							"6",
+							{
+								"type": "bonus",
+								"value": 4
+							}
 						],
 						[
-							4,
-							22
+							"6",
+							{
+								"type": "bonus",
+								"value": 4
+							}
 						],
 						[
-							4,
-							22
+							"6",
+							{
+								"type": "bonus",
+								"value": 4
+							}
 						],
 						[
-							4,
-							22
-						]
-					]
-				},
-				{
-					"title": "Spell Slots per Spell Level",
-					"colLabels": [
-						"{@filter 1st|spells|level=1|class=bard}",
-						"{@filter 2nd|spells|level=2|class=bard}",
-						"{@filter 3rd|spells|level=3|class=bard}",
-						"{@filter 4th|spells|level=4|class=bard}",
-						"{@filter 5th|spells|level=5|class=bard}",
-						"{@filter 6th|spells|level=6|class=bard}",
-						"{@filter 7th|spells|level=7|class=bard}",
-						"{@filter 8th|spells|level=8|class=bard}",
-						"{@filter 9th|spells|level=9|class=bard}"
-					],
-					"rows": [
-						[
-							2,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							1,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							2,
-							0,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							1,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							3,
-							1,
-							1,
-							1,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							3,
-							2,
-							1,
-							1,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							3,
-							3,
-							2,
-							2,
-							1,
-							1
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 4
+							}
 						]
 					]
 				}
@@ -436,109 +215,51 @@
 			"classFeatures": [
 				[
 					{
-						"name": "Bardic Inspiration",
+						"name": "Rage",
 						"entries": [
-							"You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a {@dice d6}.",
-							"Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the {@dice d20} before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.",
-							"You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.",
-							"Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a {@dice d8} at 5th level, a {@dice d10} at 10th level, and a {@dice d12} at 15th level."
+							"In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.",
+							"While raging, you gain the following benefits if you aren't wearing heavy armor:",
+							{
+								"type": "list",
+								"items": [
+									"You have advantage on Strength checks and Strength saving throws.",
+									"When you make a melee weapon attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.",
+									"You have resistance to bludgeoning, piercing, and slashing damage."
+								]
+							},
+							"If you are able to cast spells, you can't cast them or concentrate on them while raging.",
+							"Your rage lasts for 1 minute. It ends early if you are knocked {@condition unconscious} or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.",
+							"Once you have raged the maximum number of times for your barbarian level, you must finish a long rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
 						]
 					},
 					{
-						"name": "Spellcasting",
+						"name": "Unarmored Defense",
 						"entries": [
-							"You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter bard spell list|spells|class=bard}.",
-							{
-								"type": "entries",
-								"name": "Cantrips",
-								"entries": [
-									"You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, learning a 3rd cantrip at 4th level and a 4th at 10th level."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spell Slots",
-								"entries": [
-									"The Bard table shows how many spell slots you have to cast your {@filter bard spells|spells|class=bard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-									"For example, if you know the 1st-level spell {@spell cure wounds} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell cure wounds} using either slot."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spells Known of 1st Level and Higher",
-								"entries": [
-									"You know four 1st-level spells of your choice from the bard spell list.",
-									"You learn an additional bard spell of your choice at each level except 12th, 16th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
-									"Additionally, when you gain a level in this class, you can choose one of the bard spells you know and replace it with another spell from the bard spell list, which also must be of a level for which you have spell slots."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spellcasting Ability",
-								"entries": [
-									"Charisma is your spellcasting ability for your bard spells. Your magic comes from the heart and soul you pour into the performance of your music or oration. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a bard spell you cast and when making an attack roll with one.",
-									{
-										"type": "abilityDc",
-										"name": "Spell",
-										"attributes": [
-											"cha"
-										]
-									},
-									{
-										"type": "abilityAttackMod",
-										"name": "Spell",
-										"attributes": [
-											"cha"
-										]
-									}
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Ritual Casting",
-								"entries": [
-									"You can cast any bard spell you know as a ritual if that spell has the ritual tag."
-								]
-							},
-							{
-								"type": "entries",
-								"name": "Spellcasting Focus",
-								"entries": [
-									"You can use a musical instrument (found in chapter 5) as a spellcasting focus for your bard spells."
-								]
-							}
+							"While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
 						]
 					}
 				],
 				[
 					{
-						"name": "Jack of All Trades",
+						"name": "Danger Sense",
 						"entries": [
-							"Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus."
+							"At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be {@condition blinded}, {@condition deafened}, or {@condition incapacitated}."
 						]
 					},
 					{
-						"name": "Song of Rest (d6)",
+						"name": "Reckless Attack",
 						"entries": [
-							"Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra {@dice 1d6} hit points.",
-							"The extra hit points increase when you reach certain levels in this class: to {@dice 1d8} at 9th level, to {@dice 1d10} at 13th level, and to {@dice 1d12} at 17th level."
+							"Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
 						]
 					}
 				],
 				[
 					{
-						"name": "Bard College",
+						"name": "Primal Path",
 						"entries": [
-							"At 3rd level, you delve into the advanced techniques of a bard college of your choice from the list of available colleges. Your choice grants you features at 3rd level and again at 6th and 14th level."
+							"At 3rd level, you choose a path that shapes the nature of your rage from the list of available paths. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels."
 						],
 						"gainSubclassFeature": true
-					},
-					{
-						"name": "Expertise",
-						"entries": [
-							"At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
-							"At 10th level, you can choose another two skill proficiencies to gain this benefit."
-						]
 					}
 				],
 				[
@@ -552,112 +273,104 @@
 				],
 				[
 					{
-						"name": "Bardic Inspiration (d8)",
+						"name": "Extra Attack",
 						"entries": [
-							"At 5th level, your Bardic Inspiration die changes to a {@dice d8}."
+							"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
 						]
 					},
 					{
-						"name": "Font of Inspiration",
+						"name": "Fast Movement",
 						"entries": [
-							"Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest."
+							"Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor."
 						]
 					}
 				],
 				[
 					{
-						"name": "Countercharm",
+						"name": "Path Feature",
 						"entries": [
-							"At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being {@condition frightened} or {@condition charmed}. A creature must be able to hear you to gain this benefit. The performance ends early if you are {@condition incapacitated} or silenced or if you voluntarily end it (no action required)."
-						]
-					},
-					{
-						"name": "Bard College feature",
-						"entries": [
-							"At 6th level, you gain a feature from your Bard College."
+							"At 6th level, you gain a feature from your Primal Path."
 						],
 						"gainSubclassFeature": true
 					}
 				],
-				[],
+				[
+					{
+						"name": "Feral Instinct",
+						"entries": [
+							"By 7th level, your instincts are so honed that you have advantage on initiative rolls.",
+							"Additionally, if you are surprised at the beginning of combat and aren't {@condition incapacitated}, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn."
+						]
+					}
+				],
 				[
 					{
 						"name": "Ability Score Improvement",
 						"entries": [
 							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+							"If your DM uses the optional Feats, you can instead take a feat."
 						]
 					}
 				],
 				[
 					{
-						"name": "Song of Rest (d8)",
+						"name": "Brutal Critical (1 die)",
 						"entries": [
-							"At 9th level, the extra hit points gained from Song of Rest increases to {@dice 1d8}."
+							"Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.",
+							"This increases to two additional dice at 13th level and three additional dice at 17th level."
 						]
 					}
 				],
 				[
 					{
-						"name": "Bardic Inspiration (d10)",
+						"name": "Path feature",
 						"entries": [
-							"At 10th level, your Bardic Inspiration die changes to a {@dice d10}."
-						]
-					},
-					{
-						"name": "Expertise",
-						"entries": [
-							"At 10th level, you can choose another two skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies."
-						]
-					},
-					{
-						"name": "Magical Secrets",
-						"entries": [
-							"By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-							"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.",
-							"You learn two additional spells from any classes at 14th level and again at 18th level."
-						]
-					}
-				],
-				[],
-				[
-					{
-						"name": "Ability Score Improvement",
-						"entries": [
-							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Song of Rest (d10)",
-						"entries": [
-							"At 13th level, the extra hit points gained from Song of Rest increases to {@dice 1d10}."
-						]
-					}
-				],
-				[
-					{
-						"name": "Magical Secrets",
-						"entries": [
-							"At 14th level, choose two additional spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-							"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table."
-						]
-					},
-					{
-						"name": "Bard College feature",
-						"entries": [
-							"At 14th level, you gain a feature from your Bard College."
+							"At 10th level, you gain a feature from your Primal Path."
 						],
 						"gainSubclassFeature": true
 					}
 				],
 				[
 					{
-						"name": "Bardic Inspiration (d12)",
+						"name": "Relentless Rage",
 						"entries": [
-							"At 15th level, your Bardic Inspiration die changes to a {@dice d12}."
+							"Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.",
+							"Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM uses the optional Feats, you can instead take a feat."
+						]
+					}
+				],
+				[
+					{
+						"name": "Brutal Critical (2 dice)",
+						"entries": [
+							"At 13th level, you can roll two additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.",
+							"This increases to three additional dice at 17th level."
+						]
+					}
+				],
+				[
+					{
+						"name": "Path feature",
+						"entries": [
+							"At 14th level, you gain a feature from your Primal Path."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Persistent Rage",
+						"entries": [
+							"Beginning at 15th level, your rage is so fierce that it ends early only if you fall {@condition unconscious} or if you choose to end it."
 						]
 					}
 				],
@@ -666,24 +379,23 @@
 						"name": "Ability Score Improvement",
 						"entries": [
 							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+							"If your DM uses the optional Feats, you can instead take a feat."
 						]
 					}
 				],
 				[
 					{
-						"name": "Song of Rest (d12)",
+						"name": "Brutal Critical (3 dice)",
 						"entries": [
-							"At 17th level, the extra hit points gained from Song of Rest increases to {@dice 1d12}."
+							"At 17th level, you can roll three additional weapon damage dice when determining the extra damage for a critical hit with a melee attack."
 						]
 					}
 				],
 				[
 					{
-						"name": "Magical Secrets",
+						"name": "Indomitable Might",
 						"entries": [
-							"At 18th level, choose two additional spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
-							"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table."
+							"Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total."
 						]
 					}
 				],
@@ -692,46 +404,37 @@
 						"name": "Ability Score Improvement",
 						"entries": [
 							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+							"If your DM uses the optional Feats, you can instead take a feat."
 						]
 					}
 				],
 				[
 					{
-						"name": "Superior Inspiration",
+						"name": "Primal Champion",
 						"entries": [
-							"At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use."
+							"At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
 						]
 					}
 				]
 			],
-			"subclassTitle": "Bard College",
+			"subclassTitle": "Primal Path",
 			"subclasses": [
 				{
-					"name": "College of Lore",
-					"shortName": "Lore",
+					"name": "Path of the Berserker",
+					"shortName": "Berserker",
 					"source": "PHB",
 					"srd": true,
 					"subclassFeatures": [
 						[
 							{
-								"name": "College of Lore",
+								"name": "Path of the Berserker",
 								"entries": [
-									"Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king.",
-									"The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic.",
-									"The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.",
+									"For some barbarians, rage is a means to an end—that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.",
 									{
 										"type": "entries",
-										"name": "Bonus Proficiencies",
+										"name": "Frenzy",
 										"entries": [
-											"When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Cutting Words",
-										"entries": [
-											"Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others. When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll. You can choose to use this feature after the creature makes its roll, but before the DM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being {@condition charmed}."
+											"Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of {@condition exhaustion}."
 										]
 									}
 								]
@@ -742,9 +445,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Additional Magical Secrets",
+										"name": "Mindless Rage",
 										"entries": [
-											"At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know."
+											"Beginning at 6th level, you can't be {@condition charmed} or {@condition frightened} while raging. If you are {@condition charmed} or {@condition frightened} when you enter your rage, the effect is suspended for the duration of the rage."
 										]
 									}
 								]
@@ -755,9 +458,23 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Peerless Skill",
+										"name": "Intimidating Presence",
 										"entries": [
-											"Starting at 14th level, when you make an ability check, you can expend one use of Bardic Inspiration. Roll a Bardic Inspiration die and add the number rolled to your ability check. You can choose to do so after you roll the die for the ability check, but before the DM tells you whether you succeed or fail."
+											"Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be {@condition frightened} of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the {@condition frightened} creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.",
+											"If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Retaliation",
+										"entries": [
+											"Starting at 14th level, when you take damage from a creature that is within 5 feet of you. you can use your reaction to make a melee weapon attack against that creature."
 										]
 									}
 								]
@@ -766,248 +483,37 @@
 					]
 				},
 				{
-					"name": "College of Valor",
-					"shortName": "Valor",
+					"name": "Path of the Totem Warrior",
+					"shortName": "Totem Warrior",
 					"source": "PHB",
 					"subclassFeatures": [
 						[
 							{
-								"name": "College of Valor",
+								"name": "Path of the Totem Warrior",
 								"entries": [
-									"Bards of the College of Valor are daring skalds whose tales keep alive the memory of the great heroes of the past, and thereby inspire a new generation of heroes. These bards gather in mead halls or around great bonfires to sing the deeds of the mighty, both past and present. They travel the land to witness great events firsthand and to ensure that the memory of those events doesn't pass from the world. With their songs, they inspire others to reach the same heights of accomplishment as the heroes of old.",
+									"The Path of the Totem Warrior is a spiritual journey, as the barbarian accepts a spirit animal as guide, protector, and inspiration. In battle, your totem spirit fills you with supernatural might, adding magical fuel to your barbarian rage.",
+									"Most barbarian tribes consider a totem animal to be kin to a particular clan. In such cases, it is unusual for an individual to have more than one totem animal spirit, though exceptions exist.",
 									{
 										"type": "entries",
-										"name": "Bonus Proficiencies",
+										"name": "Spirit Seeker",
 										"entries": [
-											"When you join the College of Valor at 3rd level, you gain proficiency with medium armor, shields, and martial weapons."
+											"Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the {@spell beast sense} and {@spell speak with animals} spells, but only as rituals, as described in {@book chapter 10|PHB|10|rituals}."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Combat Inspiration",
+										"name": "Totem Spirit",
 										"entries": [
-											"Also at 3rd level, you learn to inspire others in battle. A creature that has a Bardic Inspiration die from you can roll that die and add the number rolled to a weapon damage roll it just made. Alternatively, when an attack roll is made against the creature, it can use its reaction to roll the Bardic Inspiration die and add the number rolled to its AC against that attack, after seeing the roll but before knowing whether it hits or misses."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Extra Attack",
-										"entries": [
-											"Starting at 6th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Battle Magic",
-										"entries": [
-											"At 14th level, you have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast a bard spell, you can make one weapon attack as a bonus action."
-										]
-									}
-								]
-							}
-						]
-					]
-				},
-				{
-					"name": "College of Glamour (UA)",
-					"shortName": "Glamour (UA)",
-					"source": "UABardBardColleges",
-					"isReprinted": true,
-					"subclassFeatures": [
-						[
-							{
-								"name": "College of Glamour",
-								"entries": [
-									"The College of Glamour is open to those bards who mastered their craft in the vibrant, deadly realm of the Feywild. Tutored by satyrs, eladrin, and other fey, these bards learn to use their magic to delight and captivate others.",
-									"The bards of this college are regarded with a mixture of awe and fear. Their performances are the stuff of legend. The bards of this college are so eloquent that a speech or song that one of them performs can cause captors to release the bard unharmed and can lull a furious dragon into complacency. The same magic that allows them to quell beasts can also bend minds. Villainous bards of this college can leech off a community for weeks, abusing their magic to turn their hosts into thralls.",
-									{
-										"type": "entries",
-										"name": "Mantle of Inspiration",
-										"entries": [
-											"When you join the College of Glamour at 3rd level, you gain the ability to weave a song of fey magic that enthralls your allies with vigor and speed.",
-											"As a bonus action, you can expend a use of Bardic Inspiration to grant yourself a wondrous, otherworldly appearance. When you do so, choose a number of allies you can see and who can see you within 60 feet of you, up to a number of them equal to your Charisma modifier (minimum of one). Each target gains {@dice 2d6} temporary hit points.",
-											"When a target gains these temporary hit points, it can also use its reaction to move up to its speed toward you, without provoking opportunity attacks. It must take the shortest, safest path to you.",
-											"The number of temporary hit points increases when you reach certain levels in this class, increasing to {@dice 2d8} at 5th level, {@dice 2d10} at 10th level, and {@dice 2d12} at 15th level."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Enthralling Performance",
-										"entries": [
-											"Starting at 3rd level, you can charge your performance with seductive fey magic.",
-											"If you perform for at least 10 minutes, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids within 60 feet of you who watched and listened to all of it, up to a number of them equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell save DC or be {@condition charmed} by you. While {@condition charmed} in this way, the target idolizes you, it speaks glowingly of you to anyone who speaks to it, and it hinders anyone who opposes you, avoiding violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of its allies.",
-											"If a target succeeds on its save against this effect, the target has no hint that you tried to charm it.",
-											"Once you use this feature, you can't use it again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Mantle of Majesty",
-										"entries": [
-											"At 6th level, you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you take on an appearance of unearthly beauty for 1 minute. During this time, you can cast {@spell command} as a bonus action on each of your turns, without using a spell slot. This effect lasts for 1 minute, and any creature {@condition charmed} by you automatically fails its saving throw against the spell.",
-											"Once you use this feature, you can't use it again until you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Mantle of Majesty",
-										"entries": [
-											"At 14th level, you gain an otherworldly aspect to your appearance that makes you look more fierce and lovely.",
-											"In addition, through this feature, you can cast {@spell sanctuary} on yourself. If a creature fails its saving throw against the spell, you also gain advantage on all Charisma checks against the creature for 1 minute, and it has disadvantage on any saving throw it makes against your spells on your next turn.",
-											"Once you cast {@spell sanctuary} using this feature, you can't do so again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						]
-					]
-				},
-				{
-					"name": "College of Whispers (UA)",
-					"shortName": "Whispers (UA)",
-					"source": "UABardBardColleges",
-					"isReprinted": true,
-					"subclassFeatures": [
-						[
-							{
-								"name": "College of Whispers",
-								"entries": [
-									"Most folk are happy to welcome a bard into their midst. Bards of the College of Whispers use this to their advantage. They appear to be like any other bard, sharing news, singing songs, and telling tales to the audiences they gather. In truth, the College of Whispers teaches its students that they are wolves among sheep. These bards use their knowledge and magic to uncover secrets and turn them against others through extortion and threats.",
-									"Many other bards hate the College of Whispers, viewing it as a parasite that uses the bards' reputation to acquire wealth and power. For this reason, these bards rarely reveal their true nature unless they must. They typically claim to follow some other college, or keep their true nature secret in order to better infiltrate and exploit royal courts and other settings of power.",
-									{
-										"type": "entries",
-										"name": "Venomous Blades",
-										"entries": [
-											"When you join the College of Whispers at 3rd level, you gain the ability to magically make your weapon attacks toxic for a moment.",
-											"When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an additional {@dice 2d6} poison damage to that target. You can do so only once per round on your turn.",
-											"The additional damage increases when you reach certain levels in this class, increasing to {@dice 2d8} at 5th level, {@dice 2d10} at 10th level, and {@dice 2d12} at 15th level."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Venomous Words",
-										"entries": [
-											"At 3rd level, you learn to infuse innocent-seeming words with an insidious magic. A creature that hears you speak can become plunged into fear and paranoia.",
-											"If you speak to a humanoid alone for at least 10 minutes, you can attempt to seed paranoia and fear into its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be {@condition frightened} for the next hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. While {@condition frightened} in this way, the target is paranoid and tries to avoid the company of others, including its allies. The target seeks out what it considers the safest, most secret place available to it and hides there.",
-											"If the target succeeds on its save, the target has no hint that you tried to frighten it.",
-											"Once you use this feature, you can't use it again until you finish a short rest or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Mantle of Whispers",
-										"entries": [
-											"At 6th level, you gain the ability to adopt a creature's persona. When you slay a creature with an attack or a spell or a creature dies within 5 feet of you, you can magically capture its shadow using your reaction. You can capture only the shadow of a creature that is your creature type, such as humanoid, and your size (you can capture a Small or Medium shadow if you're Small), and you can have only one shadow captured at a time.",
-											"After you capture a creature's shadow, you can use your magic to weave it into a disguise that allows you to take on its appearance and gain access to its surface memories. As an action, you take on the creature's appearance for 1 hour or until you end this effect as a bonus action.",
-											"During that hour, you gain access to all information that the creature would freely share with a casual acquaintance. Information includes general details on its background and personal life, but does not include secrets. The information is enough that you can pass yourself off as the creature by drawing on its memories.",
-											"Another creature can see through this disguise by making a Wisdom (Insight) check opposed by your Charisma (Deception) check, though you gain a +5 bonus to your check.",
-											"The disguise and the knowledge it grants disappears when this ability's duration ends."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Shadow Lore",
-										"entries": [
-											"At 14th level, you gain the ability to weave dark magic into your words and tap into a creature's deepest fears.",
-											"As an action, you magically whisper a phrase that only one creature of your choice within 30 feet of you can hear. The target must make a Wisdom saving throw against your spell save DC. It automatically succeeds if it doesn't share a language with you or if it can't hear you. On a successful saving throw, your whisper sounds like unintelligible mumbling and has no effect.",
-											"If the target fails its saving throw, it is {@condition charmed} by you for the next 8 hours or until you or your allies attack or damage it. It interprets the whispers as a description of its most mortifying secret. While you gain no knowledge of this secret, the target is convinced you know it.",
-											"While {@condition charmed} in this way, the creature obeys your commands for fear that you will reveal its secret. It won't risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend.",
-											"When the effect ends, the creature has no understanding of why it held you in such fear. Once you use this feature, you can't use it again until you finish a long rest."
-										]
-									}
-								]
-							}
-						]
-					]
-				},
-				{
-					"name": "College of Swords (UA)",
-					"shortName": "Swords (UA)",
-					"source": "UAKitsOfOld",
-					"isReprinted": true,
-					"subclassFeatures": [
-						[
-							{
-								"name": "College of Swords",
-								"entries": [
-									"Bards of the College of Swords are called blades, and they entertain through daring feats of weapon prowess. Blades perform stunts such as sword swallowing, knife throwing and juggling, and mock combats. But though they use their weapons to entertain, they are also highly trained and skilled warriors in their own right.",
-									"Their talent with weapons inspires many blades to lead double lives. One blade might use a circus troupe as cover for nefarious deeds such as assassination, robbery, and blackmail. Other blades strike at the wicked, bringing justice to bear against the cruel and powerful. Most troupes are happy to accept a blade's talent for the excitement it adds to a performance, but few entertainers fully trust them.",
-									"Blades who abandon lives as entertainers have often run into trouble that makes maintaining their secret activities impossible. A blade caught stealing or engaging in vigilante justice is too great a liability for most performer troupes. With their weapon skills as their greatest asset, these blades either take up work as enforcers for thieves' guilds or strike out on their own as adventurers.",
-									{
-										"type": "entries",
-										"name": "Bonus Proficiencies",
-										"entries": [
-											"When you join the College of Blades at 3rd level, you gain proficiency with medium armor and with scimitars."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Fighting Style",
-										"entries": [
-											"The College of Blades emphasizes mastery with weapons, granting you access to the two-weapon fighting option for the Fighting Style class feature.",
+											"At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object—an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thick-skinned, or if your totem is the eagle, your eyes turn bright yellow.",
+											"Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.",
 											{
 												"type": "entries",
 												"entries": [
 													{
 														"type": "entries",
-														"name": "Two-Weapon Fighting",
+														"name": "Bear",
 														"entries": [
-															"When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
-														]
-													}
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Blade Flourish",
-										"entries": [
-											"At 3rd level, you learn to conduct impressive displays of skill with your weapons. When you use the {@action Attack} action on your turn and attack with a dagger, longsword, rapier, scimitar, or shortsword, you can attempt one of the following flourishes.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Defensive Flourish",
-														"entries": [
-															"You spin your weapon around you in swift circles, creating a hypnotic display. As a bonus action, you expend one use of Bardic Inspiration, rolling a Bardic Inspiration die and applying the number rolled as a bonus to your AC until the start of your next turn."
+															"While raging, you have resistance to all damage except psychic damage. The spirit of the bear makes you tough enough to stand up to any punishment."
 														]
 													}
 												]
@@ -1017,9 +523,9 @@
 												"entries": [
 													{
 														"type": "entries",
-														"name": "Trick Shooter's Flourish",
+														"name": "Eagle",
 														"entries": [
-															"This favorite trick of knife throwers allows you to expend one use of Bardic Inspiration as a bonus action. Roll a Bardic Inspiration die and apply the number rolled as a bonus to the next ranged attack roll you make with a dagger this turn. If the target of the attack is an unattended, inanimate object, the bonus equals double the die roll."
+															"While you're raging and aren't wearing heavy armor, other creatures have disadvantage on opportunity attack rolls against you, and you can use the {@action Dash} action as a bonus action on your turn. The spirit of the eagle makes you into a predator who can weave through the fray with ease."
 														]
 													}
 												]
@@ -1029,10 +535,37 @@
 												"entries": [
 													{
 														"type": "entries",
-														"name": "Unnerving Flourish",
+														"name": "Elk",
 														"entries": [
-															"Your deadly display of combat prowess unnerves your opponents, leaving them cowering in fear and at your mercy. Whenever you reduce a creature to 0 hit points with a melee attack, you can use a bonus action to expend one use of Bardic Inspiration, and instead leave the creature at 1 hit point.",
-															"The creature is {@condition frightened} of you for a number of minutes equal to your Charisma modifier. It must also make a Charisma saving throw with a DC equal to your spellcasting DC + a bonus equal to the roll of your Bardic Inspiration die. If the creature fails this saving throw, it answers truthfully any questions you ask it and obeys your direct orders while it is {@condition frightened} by this effect."
+															"While you're raging and aren't wearing heavy armor, your walking speed increases by 15 feet. The spirit of the elk makes you extraordinarily swift."
+														],
+														"source": "SCAG",
+														"page": 122
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Tiger",
+														"entries": [
+															"While raging, you can add 10 feet to your long jump distance and 3 feet to your high jump distance. The spirit of the tiger empowers your leaps."
+														],
+														"source": "SCAG",
+														"page": 122
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Wolf",
+														"entries": [
+															"While you're raging, your friends have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you. The spirit of the wolf makes you a leader of hunters."
 														]
 													}
 												]
@@ -1047,9 +580,73 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Extra Attack",
+										"name": "Aspect of the Beast",
 										"entries": [
-											"Beginning at 6th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+											"At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.",
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Bear",
+														"entries": [
+															"You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift) is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Eagle",
+														"entries": [
+															"You gain the eyesight of an eagle. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom ({@skill Perception}) checks."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Elk",
+														"entries": [
+															"Whether mounted or on foot, your travel pace is doubled, as is the travel pace of up to ten companions while they're within 60 feet of you and you're not {@condition incapacitated}. The elk spirit helps you roam far and fast."
+														],
+														"source": "SCAG",
+														"page": 122
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Tiger",
+														"entries": [
+															"You gain proficiency in two skills from the following list: {@skill Athletics}, {@skill Acrobatics}, {@skill Stealth}, and {@skill Survival}. The cat spirit hones your survival instincts."
+														],
+														"source": "SCAG",
+														"page": 122
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Wolf",
+														"entries": [
+															"You gain the hunting sensibilities of a wolf. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace."
+														]
+													}
+												]
+											}
 										]
 									}
 								]
@@ -1060,9 +657,86 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Battle Magic",
+										"name": "Spirit Walker",
 										"entries": [
-											"At 14th level, you have mastered the art of weaving spellcasting and weapon use into a single harmonious act. When you use your action to cast a bard spell, you can make one weapon attack as a bonus action."
+											"At 10th level, you can cast the {@spell commune with nature} spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Totemic Attunement",
+										"entries": [
+											"At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.",
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Bear",
+														"entries": [
+															"While you're raging, any creature within 5 feet of you that's hostile to you has disadvantage on attack rolls against targets other than you or another character with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be {@condition frightened}."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Eagle",
+														"entries": [
+															"While raging, you have a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Elk",
+														"entries": [
+															"While raging, you can use a bonus action during your move to pass through the space of a Large or smaller creature. That creature must succeed on a Strength saving throw (DC 8 + your Strength bonus + your proficiency bonus) or be knocked {@condition prone} and take bludgeoning damage equal to {@dice 1d12} + your Strength modifier."
+														],
+														"source": "SCAG",
+														"page": 122
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Tiger",
+														"entries": [
+															"While you're raging, if you move at least 20 feet in a straight line toward a Large or smaller target right before making a melee weapon attack against it, you can use a bonus action to make an additional melee weapon attack against it."
+														],
+														"source": "SCAG",
+														"page": 122
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Wolf",
+														"entries": [
+															"While you're raging, you can use a bonus action on your turn to knock a Large or smaller creature {@condition prone} when you hit it with melee weapon attack."
+														]
+													}
+												]
+											}
 										]
 									}
 								]
@@ -1071,38 +745,229 @@
 					]
 				},
 				{
-					"name": "College of Swords v2 (UA)",
-					"shortName": "Swords v2 (UA)",
+					"name": "Path of the Battlerager",
+					"shortName": "Battlerager",
+					"source": "SCAG",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Path of the Battlerager",
+								"entries": [
+									"Known as Kuldjargh (literally \"axe idiot\") in Dwarvish, battleragers are dwarf followers of the gods of war and take the Path of the Battlerager. They specialize in wearing bulky, {@item spiked armor|scag} and throwing themselves into combat, striking with their body itself and giving themselves over to the fury of battle.",
+									{
+										"type": "entries",
+										"name": "Restriction - Dwarves Only",
+										"entries": [
+											"Only dwarves can follow the Path of the Battlerager. The battlerager fills a particular niche in dwarven society and culture.",
+											"Your DM can lift this restriction to better suit the campaign. The restriction exists for the Forgotten Realms. It might not apply to your DM's setting or your DM's version of the Realms."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Battlerager Armor",
+										"entries": [
+											"When you choose this path at 3rd level, you gain the ability to use {@item spiked armor|scag} as a weapon.",
+											"While you are wearing {@item spiked armor|scag} and are raging, you can use a bonus action to make one melee weapon attack with your armor spikes at a target within 5 feet of you. If the attack hits, the spikes deal {@dice 1d4} piercing damage. You use your Strength modifier for the attack and damage rolls.",
+											"Additionally, when you use the {@action Attack} action to grapple a creature, the target takes 3 piercing damage if your grapple check succeeds."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Reckless Abandon",
+										"entries": [
+											"Beginning at 6th level, when you use Reckless Attack while raging, you also gain temporary hit points equal to your Constitution modifier (minimum of 1). They vanish if any of them are left when your rage ends."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Battlerager Charge",
+										"entries": [
+											"Beginning at 10th level, you can take the {@action Dash} action as a bonus action while you are raging."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Spiked Retribution",
+										"entries": [
+											"Starting at 14th level, when a creature within 5 feet of you hits you with a melee attack, the attacker takes 3 piercing damage if you are raging, aren't {@condition incapacitated}, and are wearing {@item spiked armor|scag}."
+										]
+									}
+								]
+							}
+						]
+					]
+				},
+				{
+					"name": "Path of the Ancestral Guardian (UA)",
+					"shortName": "Ancestral Guardian (UA)",
+					"source": "UABarbarianPrimalPaths",
+					"isReprinted": true,
+					"subclassFeatures": [
+						[
+							{
+								"name": "Path of the Ancestral Guardian",
+								"entries": [
+									"Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger on in the world as mighty spirits who can guide and protect the living. When barbarians who follow this path rage, they cross the barrier into the spirit world and call on these guardian spirits for aid.",
+									"Barbarians who draw on their ancestral guardians fight to protect their tribes and their allies. With the spirits' help, they can hinder their foes even as they strike powerful blows against them.",
+									"In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell epic sagas of victories against terrible monsters and other fearsome rivals.",
+									{
+										"type": "entries",
+										"name": "Ancestral Protectors",
+										"entries": [
+											"Starting when you choose this path at 3rd level, spectral warriors appear when you rage. These warriors distract a foe you designate and hinder its attempts to evade you. While you're raging, you can use a bonus action on your turn to choose one creature you can see within 5 feet of you. Until the start of your next turn or until your rage ends, the chosen creature has disadvantage on any attack roll that doesn't target you, and if the creature takes the {@action Disengage} action within 5 feet of you, its speed is halved until the end of its turn."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Ancestral Shield",
+										"entries": [
+											"Beginning at 6th level, the guardian spirits that aid you can provide protection for your allies. If you are raging and an ally you can see within 30 feet of you takes bludgeoning, piercing, or slashing damage, you can use your reaction to transfer your resistance to those damage types to the ally. The resistance applies to the incoming damage. Until the start of your next turn, the ally keeps the resistance and you lack it, unless you also have it from a source other than rage."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Consult the Spirits",
+										"entries": [
+											"At 10th level, you gain the ability to consult with your ancestral spirits. Right before you make an Intelligence or a Wisdom check, you can give yourself advantage on the check. You can use this feature three times, and you regain expended uses when you finish a long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Vengeful Ancestors",
+										"entries": [
+											"At 14th level, your ancestral spirits grow powerful enough to strike your foes. When you or an ally you can see within 30 feet of you is damaged by a melee attack while you're raging, you can use your reaction to cause the attacker to take {@dice 2d8} force damage from the spirits."
+										]
+									}
+								]
+							}
+						]
+					]
+				},
+				{
+					"name": "Path of the Ancestral Guardian v2 (UA)",
+					"shortName": "Ancestral Guardian v2 (UA)",
 					"source": "UARevisedSubclasses",
+					"spellcastingAbility": "wis",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Path of the Ancestral Guardian v2",
+								"entries": [
+									"Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger on in the world as mighty spirits who can guide and protect the living. When barbarians who follow this path rage, they cross the barrier into the spirit world and call on these guardian spirits for aid.",
+									"Barbarians who draw on their ancestral guardians fight to protect their tribes and their allies. With the spirits' help, they can hinder their foes even as they strike powerful blows against them.",
+									"In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell epic sagas of victories against terrible monsters and other fearsome rivals.",
+									{
+										"type": "entries",
+										"name": "Ancestral Protectors",
+										"entries": [
+											"Starting when you choose this path at 3rd level, spectral warriors appear when you rage. These warriors distract a foe you designate and hinder its attempts to evade you. While you're raging, the first creature you hit with an attack on your turn becomes the target of these warriors. Until the start of your next turn or until your rage ends, that target has disadvantage on any attack roll that doesn't target you, and creatures other than you have resistance to the damage of the creature's attacks."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Ancestral Shield",
+										"entries": [
+											"Beginning at 6th level, the guardian spirits that aid you can provide protection for your allies. If you are raging and a creature you can see within 30 feet of you takes damage, you can use your reaction and reduce that damage by {@dice 2d8}. When you reach certain levels in this class, you can reduce the damage by more: by {@dice 3d8} at 10th level and by {@dice 4d8} at 14th level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Consult the Spirits",
+										"entries": [
+											"At 10th level, you gain the ability to consult with your ancestral spirits and use them to scout far-off lands. When you do so, you cast the {@spell clairvoyance} spell, without needing a spell slot. Rather than creating a spherical sensor, the spell invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for the spell. After you cast the spell in this way, you can't do so again until you finish a short or long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Vengeful Ancestors",
+										"entries": [
+											"At 14th level, your ancestral spirits grow powerful enough to strike foes that dare harm those that you protect. When you use your Spirit Shield Ability to protect a creature damaged by an attack, the attacker takes the same amount of damage that the Spirit Shield protects."
+										]
+									}
+								]
+							}
+						]
+					]
+				},
+				{
+					"name": "Path of the Storm Herald (UA)",
+					"shortName": "Storm Herald (UA)",
+					"source": "UABarbarianPrimalPaths",
 					"isReprinted": true,
 					"subclassFeatures": [
 						[
 							{
-								"name": "College of Swords v2",
+								"name": "Path of the Storm Herald",
 								"entries": [
-									"Bards of the College of Swords are called blades, and they entertain through daring feats of weapon prowess. Blades perform stunts such as sword swallowing, knife throwing and juggling, and mock combats. But though they use their weapons to entertain, they are also highly trained and skilled warriors in their own right.",
-									"Their talent with weapons inspires many blades to lead double lives. One blade might use a circus troupe as cover for nefarious deeds such as assassination, robbery, and blackmail. Other blades strike at the wicked, bringing justice to bear against the cruel and powerful. Most troupes are happy to accept a blade's talent for the excitement it adds to a performance, but few entertainers fully trust them.",
-									"Blades who abandon lives as entertainers have often run into trouble that makes maintaining their secret activities impossible. A blade caught stealing or engaging in vigilante justice is too great a liability for most performer troupes. With their weapon skills as their greatest asset, these blades either take up work as enforcers for thieves' guilds or strike out on their own as adventurers.",
+									"Typical barbarians harbor a fury that dwells within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn instead to transform their rage into a mantle of primal magic that swirls around them. When in a fury, a barbarian of this path taps into nature to create powerful, magical effects.",
+									"Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect the natural realm. Other storm heralds hone their craft in elite lodges founded in regions wracked by storms, in the frozen reaches at the world's end, or deep in the hottest deserts.",
 									{
 										"type": "entries",
-										"name": "Bonus Proficiencies",
+										"name": "Storm of Fury",
 										"entries": [
-											"When you join the College of Blades at 3rd level, you gain proficiency with medium armor and with scimitars. If you are proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your Bard spells."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Fighting Style",
-										"entries": [
-											"The College of Blades emphasizes mastery with weapons, granting you access to either the dueling or two-weapon fighting option for the Fighting Style class feature, which are as follows.",
+											"When you select this path at 3rd level, choose one of the following options: desert, sea, or tundra. The environment you choose shapes the nature of the storm you conjure when you rage. While raging, you emanate an aura in a 10-foot radius. The effects of this aura depend on your chosen environment.",
 											{
 												"type": "entries",
 												"entries": [
 													{
 														"type": "entries",
-														"name": "Dueling",
+														"name": "Desert",
 														"entries": [
-															"When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+															"Any enemy that ends its turn in your aura takes fire damage equal to 2 + your barbarian level divided by 4."
 														]
 													}
 												]
@@ -1112,28 +977,9 @@
 												"entries": [
 													{
 														"type": "entries",
-														"name": "Two-Weapon Fighting",
+														"name": "Sea",
 														"entries": [
-															"When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
-														]
-													}
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Blade Flourish",
-										"entries": [
-											"At 3rd level, you learn to conduct impressive displays of skill with your weapons. As a standard action, you can make a standard melee attack and increase your walking speed by 10 feet until the end of the current turn. Whenever you use this option, you can also use one of the following Blade Flourish options with it.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Defensive Flourish",
-														"entries": [
-															"You spin your weapon around you in swift circles, creating a hypnotic display. You can expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and applying the number rolled as a bonus to your AC until the start of your next turn."
+															"At the end of each of your turns, you can choose a creature in your aura other than yourself. The target must make a Dexterity saving throw against a DC equal to 8 + your proficiency bonus + your Constitution modifier. The target takes {@dice 2d6} lightning damage on a failed save, and half as much damage on a successful one. This damage increases to {@dice 3d6} at 10th level and to {@dice 4d6} at 15th level."
 														]
 													}
 												]
@@ -1143,21 +989,9 @@
 												"entries": [
 													{
 														"type": "entries",
-														"name": "Slashing Flourish",
+														"name": "Tundra",
 														"entries": [
-															"If the attack hits its target, you can expend one of your uses of Bardic Inspiration to cause the weapon to damage each creature of your choice, other than the target, that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Mobile Flourish",
-														"entries": [
-															"If the attack hits its target, you can expend one of your uses of Bardic Inspiration to push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on the Bardic Inspiration die. You can then immediately use your reaction to move up to your speed to an unoccupied space within 5 feet of the target."
+															"Any enemy that ends its turn in your aura takes cold damage equal to 2 + your barbarian level divided by 4."
 														]
 													}
 												]
@@ -1172,9 +1006,45 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Cunning Flourish",
+										"name": "Storm Soul",
 										"entries": [
-											"Beginning at 6th level, you can attack twice, instead of once, whenever you take the Blade Flourish action on your turn. You can, nevertheless, only use one Blade Flourish option when you take that action."
+											"At 6th level, your link to the power of the storm grants you additional abilities based on the environment you chose at 3rd level.",
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Desert",
+														"entries": [
+															"You gain resistance to fire damage and don't suffer the effects of extreme heat."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Sea",
+														"entries": [
+															"You gain resistance to lightning damage and can breathe underwater."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Tundra",
+														"entries": [
+															"Tundra. You gain resistance to cold damage and don't suffer the effects of extreme cold."
+														]
+													}
+												]
+											}
 										]
 									}
 								]
@@ -1185,9 +1055,58 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Master's Flourish",
+										"name": "Shield of the Storm",
 										"entries": [
-											"Starting at 14th level, whenever you use a Blade Flourish option, you can roll a {@dice d6} and use it instead of expending a Bardic Inspiration die."
+											"At 10th level, you learn to use your mastery of the storm to protect your allies. While you are raging, allies within your aura gain the benefits of your Storm Soul feature."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Raging Storm",
+										"entries": [
+											"At 14th level, the power of the storm you channel grows mightier.",
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Desert",
+														"entries": [
+															"The ground around you becomes like shifting sand. Any enemy that attempts to move more than 5 feet per turn on the ground while in your aura must make a Strength saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the creature's speed drops to 0 until the start of its next turn."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Sea",
+														"entries": [
+															"Roaring winds tear through the area around you. Any creature in your aura that you hit with an attack must make a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition prone}."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Tundra",
+														"entries": [
+															"The air around you coldly slows your foes. The area within your aura is difficult terrain for your enemies."
+														]
+													}
+												]
+											}
 										]
 									}
 								]
@@ -1196,39 +1115,29 @@
 					]
 				},
 				{
-					"name": "College of Satire (UA)",
-					"shortName": "Satire (UA)",
-					"source": "UAKitsOfOld",
+					"name": "Path of the Zealot (UA)",
+					"shortName": "Zealot (UA)",
+					"source": "UABarbarianPrimalPaths",
+					"isReprinted": true,
 					"subclassFeatures": [
 						[
 							{
-								"name": "College of Satire",
+								"name": "Path of the Zealot",
 								"entries": [
-									"Bards of the College of Satire are called jesters. They use lowbrow stories, daring acrobatics, and cutting jokes to entertain audiences, ranging from the crowds in a rundown dockside pub to the nobles of a king's royal court. Where other bards seek forgotten lore or tales of epic bravery, jesters ferret out embarrassing and hilarious stories of all kinds. Whether telling the ribald tale of a brawny stable hand's affair with an aged duchess or a mocking satire of a paladin of Helm's cloying innocence, a jester never lets taste, social decorum, or shame get in the way of a good laugh.",
-									"While jesters are masters of puns, jokes, and verbal barbs, they are much more than just comic relief. They are expected to mock and provoke, taking advantage of how even the most powerful folk are expected by tradition to endure a jester's barbs with good humor. This expectation allows a jester to serve as a critic or a voice of reason when others are too intimidated to speak the truth.",
-									"For the duchess with a taste for strapping young laborers, such tales might serve to warn the targets of her affections and force her to change her ways for lack of willing partners. Striking back at the jester only ruins her already damaged reputation, and might provide the best evidence that the jester's satires have hit their mark. But if she is kind and generous to her conquests, the jokes and stories cast her as a kind of folk hero, while drawing even more potential partners to her.",
-									"Jesters are loyal to only one cause: the pursuit and propagation of the truth. They use their comedy and innocuous appearance to break down social barriers and expose corruption, incompetence, and stupidity among the rich and powerful. Whether revealing a con artist's treachery or exposing a baron's plans for war as driven by greed and bloodlust, a jester serves as the conscience of a realm.",
-									"Jesters adventure to safeguard the common folk and to undermine the plans of the rich, powerful, and arrogant. Their magic bolsters allies' spirits while casting doubt into foes' minds. Among bards, jesters are unmatched acrobats, and their ability to tumble, dodge, leap, and climb makes them slippery opponents in battle.",
+									"Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots—warriors who channel their rage into powerful displays of divine power.",
+									"A variety of gods across the worlds of D&D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.",
 									{
 										"type": "entries",
-										"name": "Bonus Proficiencies",
+										"name": "Divine Fury",
 										"entries": [
-											"When you join the College of Satire at 3rd level, you gain proficiency with {@item thieves' tools|phb}. You also gain proficiency in {@skill Sleight of Hand} and one additional skill of your choice. If you are already proficient with {@item thieves' tools|phb} or in {@skill Sleight of Hand}, choose another skill proficiency for each proficiency you already have."
+											"Starting when you choose this path at 3rd level, you can channel divine fury when you start to rage. If you do so, you become cloaked in an aura of divine power until the rage ends. At the end of each of your turns for that duration, each creature within 5 feet of you takes damage equal to {@dice 1d6} + half your barbarian level. The damage is necrotic or radiant; you choose the type of damage when you gain this feature."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Tumbling Fool",
+										"name": "Warrior of the Gods",
 										"entries": [
-											"At 3rd level, you master a variety of acrobatic techniques that allow you to evade danger. As a bonus action, you can tumble. When you tumble, you gain the following benefits for the rest of your turn:",
-											{
-												"type": "list",
-												"items": [
-													"You gain the benefits of taking the {@action Dash} and {@action Disengage} actions.",
-													"You gain a climbing speed equal to your current speed.",
-													"You take half damage from falling."
-												]
-											}
+											"At 3rd level, your soul is marked for endless battle. If a spell would have the sole effect of restoring you to life (but not undeath), the caster does not need material components to cast the spell on you."
 										]
 									}
 								]
@@ -1239,10 +1148,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Fool's Insight",
+										"name": "Zealous Focus",
 										"entries": [
-											"At 6th level, your ability to gather stories and lore gains a supernatural edge. You can cast detect thoughts up to a number of times equal to your Charisma modifier. You regain any expended uses of this ability after completing a long rest.",
-											"If a creature resists your attempt to probe deeper and succeeds at its saving throw against your detect thoughts, it immediately suffers an embarrassing social gaffe. It might loudly pass gas, unleash a thunderous burp, trip and fall, or be compelled to tell a tasteless joke."
+											"At 6th level, the divine power that fuels your rage can shield you from harm. If you fail a saving throw while raging, you can instead succeed on that saving throw as a reaction. However, doing so immediately ends your rage, and you can't rage again until you finish a short or long rest."
 										]
 									}
 								]
@@ -1253,60 +1161,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Fool's Luck",
+										"name": "Zealous Presence",
 										"entries": [
-											"Jesters seem to have a knack for pulling themselves out of tight situations, transforming what looks like sure failure into an embarrassing but effective success.",
-											"At 14th level, you can expend one use of Bardic Inspiration after you fail an ability check, fail a saving throw, or miss with an attack roll. Roll a Bardic Inspiration die and add the number rolled to your attack, saving throw, or ability check, using the new result in place of the failed one.",
-											"If using this ability grants you a success on the attack, saving throw, or ability check, note the number you rolled on the Bardic Inspiration die. The DM can then apply that result as a penalty to an attack or check you make, and you cannot use this ability again until you suffer this drawback. When the DM invokes this penalty, describe an embarrassing gaffe or mistake you make as part of the affected die roll."
-										]
-									}
-								]
-							}
-						]
-					]
-				},
-				{
-					"name": "College of Glamour",
-					"shortName": "Glamour",
-					"source": "XGE",
-					"subclassFeatures": [
-						[
-							{
-								"name": "College of Glamour",
-								"entries": [
-									"The College of Glamour is the home of bards who mastered their craft in the vibrant realm of the Feywild or under the tutelage of someone who dwelled there. Tutored by satyrs, eladrin, and other fey, these bards learn to use their magic to delight and captivate others.",
-									"The bards of this college are regarded with a mixture of awe and fear. Their performances are the stuff of legend. These bards are so eloquent that a speech or song that one of them performs can cause captors to release the bard unharmed and can lull a furious dragon into complacency. The same magic that allows them to quell beasts can also bend minds. Villainous bards of this college can leech off a community for weeks, misusing their magic to turn their hosts into thralls. Heroic bards of this college instead use this power to gladden the downtrodden and undermine oppressors.",
-									{
-										"type": "entries",
-										"name": "Mantle of Inspiration",
-										"entries": [
-											"When you join the College of Glamour at 3rd level, you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed.",
-											"As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and that can see you within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks.",
-											"The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 10th level, and 14 at 15th level."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Enthralling Performance",
-										"entries": [
-											"Starting at 3rd level, you can charge your performance with seductive, fey magic.",
-											"If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell save DC or be {@condition charmed} by you. While {@condition charmed} in this way, the target idolizes you, it speaks glowingly of you to anyone who talks to it, and it hinders anyone who opposes you, although it avoids violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of its allies.",
-											"If a target succeeds on its saving throw, the target has no hint that you tried to charm it.",
-											"Once you use this feature, you can't use it again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Mantle of Majesty",
-										"entries": [
-											"At 6th level, you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you cast {@spell command}, without expending a spell slot, and you take on an appearance of unearthly beauty for 1 minute or until your concentration ends (as if you were concentrating on a spell). During this time, you can cast {@spell command} as a bonus action on each of your turns, without expending a spell slot.",
-											"Any creature {@condition charmed} by you automatically fails its saving throw against the {@spell command} you cast with this feature.",
+											"At 10th level, you learn to channel divine power to inspire zealotry in others. As an action, you howl in fury and unleash a battle cry infused with divine energy. Every ally within 60 feet of you gains advantage on attack rolls and saving throws until the start of your next turn.",
 											"Once you use this feature, you can't use it again until you finish a long rest."
 										]
 									}
@@ -1318,11 +1175,10 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Unbreakable Majesty",
+										"name": "Rage Beyond Death",
 										"entries": [
-											"At 14th level, your appearance permanently gains an otherworldly aspect that makes you look more lovely and fierce.",
-											"In addition, as a bonus action, you can assume a magically majestic presence for 1 minute or until you are {@condition incapacitated}. For the duration, whenever any creature tries to attack you for the first time on a turn, the attacker must make a Charisma saving throw against your spell save DC. On a failed save, it can't attack you on this turn, and it must choose a new target for its attack or the attack is wasted. On a successful save, it can attack you on this turn, but it has disadvantage on any saving throw it makes against your spells on your next turn.",
-											"Once you assume this majestic presence, you can't do so again until you finish a short or long rest."
+											"Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.",
+											"While raging, having 0 hit points doesn't knock you {@condition unconscious}. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends."
 										]
 									}
 								]
@@ -1331,83 +1187,22 @@
 					]
 				},
 				{
-					"name": "College of Swords",
-					"shortName": "Swords",
+					"name": "Path of the Ancestral Guardian",
+					"shortName": "Ancestral Guardian",
 					"source": "XGE",
+					"spellcastingAbility": "wis",
 					"subclassFeatures": [
 						[
 							{
-								"name": "College of Swords",
+								"name": "Path of the Ancestral Guardian",
 								"entries": [
-									"Bards of the College of Swords are called blades, and they entertain through daring feats of weapon prowess. Blades perform stunts such as sword swallowing, knife throwing and juggling, and mock combats. Though they use their weapons to entertain, they are also highly trained and skilled warriors in their own right.",
-									"Their talent with weapons inspires many blades to lead double lives. One blade might use a circus troupe as cover for nefarious deeds such as assassination, robbery, and blackmail. Other blades strike at the wicked, bringing justice to bear against the cruel and powerful. Most troupes are happy to accept a blade's talent for the excitement it adds to a performance, but few entertainers fully trust a blade in their ranks.",
-									"Blades who abandon their lives as entertainers have often run into trouble that makes maintaining their secret activities impossible. A blade caught stealing or engaging in vigilante justice is too great a liability for most troupes. With their weapon skills and magic, these blades either take up work as enforcers for thieves' guilds or strike out on their own as adventurers.",
+									"Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger in the world as mighty spirits, who can guide and protect the living. When a barbarian who follows this path rages, the barbarian contacts the spirit world and calls on these guardian spirits for aid.",
+									"Barbarians who draw on their ancestral guardians can better fight to protect their tribes and their allies. In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell sagas of victories against terrible monsters and other fearsome rivals.",
 									{
 										"type": "entries",
-										"name": "Bonus Proficiencies",
+										"name": "Ancestral Protectors",
 										"entries": [
-											"When you join the College of Swords at 3rd level, you gain proficiency with medium armor and the scimitar.",
-											"If you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Fighting Style",
-										"entries": [
-											"At 3rd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if something in the game lets you choose again.",
-											{
-												"type": "options",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Dueling",
-														"entries": [
-															"When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
-														]
-													},
-													{
-														"type": "entries",
-														"name": "Two-Weapon Fighting",
-														"entries": [
-															"When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack."
-														]
-													}
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Blade Flourish",
-										"entries": [
-											"At 3rd level, you learn to perform impressive displays of martial prowess and speed.",
-											"Whenever you take the {@action Attack} action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn.",
-											{
-												"type": "options",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Defensive Flourish",
-														"entries": [
-															"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn."
-														]
-													},
-													{
-														"type": "entries",
-														"name": "Slashing Flourish",
-														"entries": [
-															"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die."
-														]
-													},
-													{
-														"type": "entries",
-														"name": "Mobile Flourish",
-														"entries": [
-															"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on that die. You can then immediately use your reaction to move up to your walking speed to an unoccupied space within 5 feet of the target."
-														]
-													}
-												]
-											}
+											"Starting when you choose this path at 3rd level, spectral warriors appear when you enter your rage. While you're raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends."
 										]
 									}
 								]
@@ -1418,9 +1213,10 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Extra Attack",
+										"name": "Spirit Shield",
 										"entries": [
-											"Starting at 6th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+											"Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by {@dice 2d6}.",
+											"When you reach certain levels in this class, you can reduce the damage by more: by {@dice 3d6} at 10th level and by {@dice 4d6} at 14th level."
 										]
 									}
 								]
@@ -1431,9 +1227,23 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Master's Flourish",
+										"name": "Consult the Spirits",
 										"entries": [
-											"Starting at 14th level, whenever you use a Blade Flourish option, you can roll a {@dice d6} and use it instead of expending a Bardic Inspiration die."
+											"At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the {@spell augury} or {@spell clairvoyance} spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of {@spell clairvoyance} invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells.",
+											"After you cast either spell in this way, you can't use this feature again until you finish a short or long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Vengeful Ancestors",
+										"entries": [
+											"At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents."
 										]
 									}
 								]
@@ -1442,33 +1252,170 @@
 					]
 				},
 				{
-					"name": "College of Whispers",
-					"shortName": "Whispers",
+					"name": "Path of the Storm Herald",
+					"shortName": "Storm Herald",
 					"source": "XGE",
 					"subclassFeatures": [
 						[
 							{
-								"name": "College of Whispers",
+								"name": "Path of the Storm Herald",
 								"entries": [
-									"Most folk are happy to welcome a bard into their midst. Bards of the College of Whispers use this to their advantage. They appear to be like other bards, sharing news, singing songs, and telling tales to the audiences they gather. In truth, the College of Whispers teaches its students that they are wolves among sheep. These bards use their knowledge and magic to uncover secrets and turn them against others through extortion and threats.",
-									"Many other bards hate the College of Whispers, viewing it as a parasite that uses a bard's reputation to acquire wealth and power. For this reason, members of this college rarely reveal their true nature. They typically claim to follow some other college, or they keep their actual calling secret in order to infiltrate and exploit royal courts and other settings of power.",
+									"All barbarians harbor a fury within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn to transform that rage into a mantle of primal magic, which swirls around them. When in a fury, a barbarian of this path taps into the forces of nature to create powerful magical effects.",
+									"Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect nature. Other storm heralds hone their craft in lodges in regions wracked by storms, in the frozen reaches at the world's end, or deep in the hottest deserts.",
 									{
 										"type": "entries",
-										"name": "Psychic Blades",
+										"name": "Storm Aura",
 										"entries": [
-											"When you join the College of Whispers at 3rd level, you gain the ability to make your weapon attacks magically toxic to a creature's mind.",
-											"When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra {@dice 2d6} psychic damage to that target. You can do so only once per round on your turn.",
-											"The psychic damage increases when you reach certain levels in this class, increasing to {@dice 3d6} at 5th level, {@dice 5d6} at 10th level, and {@dice 8d6} at 15th level."
+											"Starting at 3rd level, you emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.",
+											"Your aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura's effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.",
+											"If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
+											{
+												"type": "options",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Desert",
+														"entries": [
+															"When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Sea",
+														"entries": [
+															"When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes {@dice 1d6} lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to {@dice 2d6} at 10th level, {@dice 3d6} at 15th level, and {@dice 4d6} at 20th level."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Tundra",
+														"entries": [
+															"When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Storm Soul",
+										"entries": [
+											"At 6th level, the storm grants you benefits even when your aura isn't active. The benefits are based on the environment you chose for your Storm Aura.",
+											{
+												"type": "options",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Desert",
+														"entries": [
+															"You gain resistance to fire damage, and you don't suffer the effects of extreme heat, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch a flammable object that isn't being worn or carried by anyone else and set it on fire."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Sea",
+														"entries": [
+															"You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Tundra",
+														"entries": [
+															"You gain resistance to cold damage, and you don't suffer the effects of extreme cold, as described in the Dungeon Master's Guide. Moreover, as an action, you can touch water and turn a 5-foot cube of it into ice, which melts after 1 minute. This action fails if a creature is in the cube."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Shielding Storm",
+										"entries": [
+											"At 10th level, you learn to use your mastery of the storm to protect others. Each creature of your choice has the damage resistance you gained from the Storm Soul feature while the creature is in your Storm Aura."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Raging Storm",
+										"entries": [
+											"At 14th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura.",
+											{
+												"type": "options",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Desert",
+														"entries": [
+															"Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Sea",
+														"entries": [
+															"When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked {@condition prone}, as if struck by a wave."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Tundra",
+														"entries": [
+															"Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					]
+				},
+				{
+					"name": "Path of the Zealot",
+					"shortName": "Zealot",
+					"source": "XGE",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Path of the Zealot",
+								"entries": [
+									"Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots—warriors who channel their rage into powerful displays of divine power.",
+									"A variety of gods across the worlds of D&D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.",
+									{
+										"type": "entries",
+										"name": "Divine Fury",
+										"entries": [
+											"Starting when you choose this path at 3rd level, you can channel divine fury into your weapon strikes. While you're raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to {@dice 1d6} + half your barbarian level. The extra damage is necrotic or radiant; you choose the type of damage when you gain this feature."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Words of Terror",
+										"name": "Warrior of the Gods",
 										"entries": [
-											"At 3rd level, you learn to infuse innocent-seeming words with an insidious magic that can inspire terror.",
-											"If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia in its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be {@condition frightened} of you or another creature of your choice. The target is {@condition frightened} in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged.",
-											"If the target succeeds on its saving throw, the target has no hint that you tried to frighten it.",
-											"Once you use this feature, you can't use it again until you finish a short or long rest."
+											"At 3rd level, your soul is marked for endless battle. If a spell, such as {@spell raise dead}, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the spell on you."
 										]
 									}
 								]
@@ -1479,13 +1426,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Mantle of Whispers",
+										"name": "Fanatical Focus",
 										"entries": [
-											"At 6th level, you gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or you finish a long rest.",
-											"You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy and alive. This disguise lasts for 1 hour or until you end it as a bonus action.",
-											"While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories.",
-											"Another creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.",
-											"Once you capture a shadow with this feature, you can't capture another one with it until you finish a short or long rest."
+											"Starting at 6th level, the divine power that fuels your rage can protect you. If you fail a saving throw while you're raging, you can reroll it, and you must use the new roll. You can use this ability only once per rage."
 										]
 									}
 								]
@@ -1496,65 +1439,100 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Shadow Lore",
+										"name": "Zealous Presence",
 										"entries": [
-											"At 14th level, you gain the ability to weave dark magic into your words and tap into a creature's deepest fears.",
-											"As an action, you magically whisper a phrase that only one creature of your choice within 30 feet of you can hear. The target must make a Wisdom saving throw against your spell save DC. It automatically succeeds if it doesn't share a language with you or if it can't hear you. On a successful saving throw, your whisper sounds like unintelligible mumbling and has no effect.",
-											"On a failed saving throw, the target is {@condition charmed} by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a saving throw. It interprets the whispers as a description of its most mortifying secret. You gain no knowledge of this secret, but the target is convinced you know it.",
-											"The {@condition charmed} creature obeys your commands for fear that you will reveal its secret. It won't risk its life for you or fight for you, unless it was already inclined to do so. It grants you favors and gifts it would offer to a close friend.",
-											"When the effect ends, the creature has no understanding of why it held you in such fear.",
+											"At 10th level, you learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn.",
 											"Once you use this feature, you can't use it again until you finish a long rest."
 										]
 									}
 								]
 							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Rage beyond Death",
+										"entries": [
+											"Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.",
+											"While you're raging, having 0 hit points doesn't knock you {@condition unconscious}. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends, and you die then only if you still have 0 hit points."
+										]
+									}
+								]
+							}
 						]
 					]
 				},
 				{
-					"name": "College of Eloquence (UA)",
-					"shortName": "Eloquence (UA)",
-					"source": "UABardAndPaladin",
+					"name": "Path of the Wild Soul (UA)",
+					"shortName": "Wild Soul (UA)",
+					"source": "UABarbarianAndMonk",
 					"subclassFeatures": [
 						[
 							{
-								"name": "College of Eloquence",
+								"name": "Path of the Wild Soul",
 								"entries": [
-									"Adherents of the College of Eloquence master the art of oratory. Persuasion is regarded as a high art, and a well-reasoned, well-spoken argument often proves more powerful than objective truth. These bards wield a blend of logic and theatrical wordplay, winning over skeptics and detractors with logical arguments, and plucking at heartstrings to appeal to the emotions of entire audiences.",
+									"The realm of the Feywild abounds with beauty, unpredictable emotion, and rampant magic. A barbarian exposed to this realm feels emotions powerfully and magic saturates their body.",
+									"When a barbarian who follows this path rages, it is a bellowing roar for freedom, an explosion of expression, manifesting in unpredictable ways.",
 									{
 										"type": "entries",
-										"name": "Universal Speech",
+										"name": "Lingering Magic",
 										"entries": [
-											"{@i 3rd-level College of Eloquence feature}",
-											"You have gained the ability to speak and reason with any creature. As a bonus action, you can expend one of your uses of Bardic Inspiration. When you do so, roll your Bardic Inspiration die, and choose a number of creatures within 60 feet of you that you can see equal to the roll. For 10 minutes, the chosen creatures can magically understand you, regardless of the language you speak, and you have advantage on Charisma checks made to influence them. This feature works even on a creature that doesn't speak any languages."
+											"At 3rd level, your body reacts to the presence of magic. You can cast the {@spell detect magic} spell without using a spell slot or components. Constitution is your spellcasting ability for this spell. You faintly glow a color corresponding to the school of magic you detect (you choose the colors).",
+											"You can use this feature a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a long rest."
 										]
 									},
 									{
 										"type": "entries",
-										"name": "Soothing Words",
+										"name": "Wild Surge",
 										"entries": [
-											"{@i 3rd-level College of Eloquence feature}",
-											"You can now cast calm emotions without expending a spell slot. You can use this feature a number of times equal to your Charisma modifier. You regain all expended uses of this feature when you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Undeniable Logic",
-										"entries": [
-											"{@i 6th-level College of Eloquence feature}",
-											"You can spin words laced with magic into a knot of reasoning that can be encouraging or impossible to follow.",
-											"As a bonus action, you can expend one of your uses of Bardic Inspiration. When you do so, choose a creature you can see within 60 of you that can hear you, then roll your Bardic Inspiration die and choose one of the following:",
+											"Starting at 3rd level, magic erupts from you as you rage. When you enter your rage, roll on the Wild Surge table to determine the magical effect produced.",
+											"If the wild surge requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
 											{
-												"type": "list",
-												"items": [
-													"The creature takes psychic damage equal to the number you roll on the Bardic Inspiration die, and the creature must succeed on an Intelligence saving throw against your spell save DC or have disadvantage on the next saving throw it makes before the end of your next turn.",
-													"The creature regains hit points equal to the number you roll on the Bardic Inspiration die, and the creature has advantage on the next saving throw it makes before the end of your next turn."
+												"type": "table",
+												"caption": "Wild Surge",
+												"colLabels": [
+													"d8",
+													"Effect"
+												],
+												"colStyles": [
+													"col-1 text-center",
+													"col-11"
+												],
+												"rows": [
+													[
+														1,
+														"Necrotic energy bursts from you. Each creature within 30 feet of you takes {@dice 1d10} necrotic damage, and you gain temporary hit points equal to the sum of the necrotic damage dealt to the creatures."
+													],
+													[
+														2,
+														"You teleport up to 20 feet to an unoccupied space you can see. Until your rage ends, you can activate this effect again on each of your turns as a bonus action."
+													],
+													[
+														3,
+														"You conjure {@dice 1d4} intangible spirits that look like {@creature flumph||flumphs} in unoccupied spaces within 30 feet of you. Each spirit immediately flies 30 feet in a random direction. At the end of your turn, all spirits explode and each creature within 5 feet of one or more of them must succeed on a Dexterity saving throw or take {@dice 2d8} force damage."
+													],
+													[
+														4,
+														"Arcane energy enshrouds you. Until your rage ends, you gain a +2 bonus to AC, and whenever a creature within 10 feet of you hits you with an attack, that creature takes force damage equal to your Constitution modifier."
+													],
+													[
+														5,
+														"Plant life temporarily grows around you: until your rage ends, the ground within 10 feet of you is difficult terrain."
+													],
+													[
+														6,
+														"Arcane energy taps into the minds of those around you. Each creature within 30 feet of you must succeed ona Wisdom saving throw or you see a glimpse of the creature's thoughts, learning how it plans to attack you. As a result, the creature has disadvantage on attack rolls against you until the start of your next turn."
+													],
+													[
+														7,
+														"Shadows weave around a weapon of your choice you are holding. Until your rage ends, your weapon deals psychic damage instead of its bludgeoning, slashing, or piercing damage, and it gains the light and thrown properties with a normal range of 20 feet and a long range of 60 feet. If you drop the weapon or throw it, the weapon dissipates and reappears in your hand at the end of your turn."
+													],
+													[
+														8,
+														"A beam of brilliant light lances from your chest in a 5-foot-wide, 60-foot-long line. Each creature in the line must succeed on a Constitution saving throw or take {@dice 2d8} radiant damage and be {@condition blinded} until the start of your next turn."
+													]
 												]
 											}
 										]
@@ -1567,11 +1545,44 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Infectious Inspiration",
+										"name": "Magic Reserves",
 										"entries": [
-											"{@i 14th-level College of Eloquence feature}",
-											"When a creature adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll fails, the creature can keep the Bardic Inspiration die.",
-											"In addition, when a creature adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll succeeds, you can use your reaction to encourage a different creature (other than yourself) that can hear you within 60 feet of you, giving it a Bardic Inspiration die without expending any of your Bardic Inspiration uses. You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+											"At 6th level, you can channel the magic surging inside you into other creatures. As an action, you can touch a creature and roll a {@dice d4}. The creature recovers an expended spell slot of a level equal to the number rolled. If the creature you touch can't recover a spell slot of that level, the creature instead gains temporary hit points equal to five times the number rolled.",
+											"You take force damage equal to five times the number rolled.",
+											"When you reach 14th level in this class, you increase the die to a {@dice d6}."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Arcane Rebuke",
+										"entries": [
+											"At 10th level, the magic crackling within your soul lashes out. When a creature forces you to make a saving throw while you are raging, you can use your reaction to deal {@dice 3d6} force damage to that creature."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Chaotic Fury",
+										"entries": [
+											"At 14th level, you become a wellspring of wild magic while you are raging. As a bonus action, you can reroll on the Wild Surge table, replacing your current effect with the new one."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Improved Magic Reserves",
+										"entries": [
+											"At 14th level, you increase your magic reserves die to a {@dice d6}."
 										]
 									}
 								]
@@ -1580,41 +1591,71 @@
 					]
 				},
 				{
-					"name": "College of Creation (UA)",
-					"shortName": "Creation (UA)",
-					"source": "UA2020SubclassesPt2",
+					"name": "Path of the Beast (UA)",
+					"shortName": "Beast (UA)",
+					"source": "UA2020SubclassesPt1",
 					"subclassFeatures": [
 						[
 							{
-								"name": "College of Creation",
+								"name": "Path of the Beast",
 								"entries": [
-									"Bards believe the multiverse was given existence through word and sound, esoteric harmonies that continue to resound through existence: the Song of Creation. The bards of this college draw on this ancient power through performances of dance, music, or song to bring into being what they need most.",
-									"Members of this college might have developed their powers during experiences on other worlds or planes of existence. Those who have seen the commonalities of multiple realities might have learned how to tap into truths most mortals glimpse only for a moment. Alternatively, the bard might find themselves out of step with their own home plane, reality, or time, their connections to elsewhere allowing them to manipulate the space around them. Regardless of where a bard draws their powers from, other performers might be drawn to them, either to learn their secrets or to put an end to their dangerous manipulation of the Song of Creation.",
+									"Barbarians who walk the Path of Beast draw their rage from a bestial spark burning within their souls. That beast howls to be released and bursts forth in the throes of rage.",
+									"Those who tread this path might be inhabited by a primal spirit or descended from shapeshifters. You can choose the origin of your feral might or determine it randomly by rolling on the Origin of the Beast table.",
+									{
+										"type": "table",
+										"caption": "Origin of the Beast",
+										"colLabels": [
+											"d4",
+											"Origin"
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-10"
+										],
+										"rows": [
+											[
+												"1",
+												"One of your parents is a lycanthrope, and you've inherited some of the curse."
+											],
+											[
+												"2",
+												"You are descended from a legendary druid, a fact manifested by your ability to partially change shape."
+											],
+											[
+												"3",
+												"A fey spirit gifted you with the ability to adopt different bestial aspects."
+											],
+											[
+												"4",
+												"An ancient animal spirit dwells within you, allowing you to walk this path."
+											]
+										]
+									},
 									{
 										"type": "entries",
-										"name": "Note of Potential",
+										"name": "Form of the Beast",
 										"entries": [
-											"{@i 3rd-level College of Creation feature}",
-											"You can manipulate the Song of Creation to summon a floating musical note of possibility: Whenever you give a creature a Bardic Inspiration die, you can create a Note of Potential. The note orbits within 5 feet of the creature. The note is a Tiny object that is intangible and invulnerable, and it lasts until the Bardic Inspiration die is lost. A creature with a note can use it in the following ways.",
+											"{@i 3rd-level Path of the Beast feature}",
+											"When you enter your rage, you can transform, revealing the bestial power within you. Until your rage ends, you manifest a natural melee weapon, choosing one of the following options each time you rage:",
 											{
-												"type": "entries",
-												"name": "Note of Destruction",
-												"entries": [
-													"Immediately after the creature rolls the Bardic Inspiration die to add it to an attack roll, the creature can expend the note to create a burst of sound. Each other creature within 5 feet of it must succeed on a Constitution saving throw against your spell save DC or take thunder damage equal to the number rolled on the Bardic Inspiration die."
-												]
-											},
-											{
-												"type": "entries",
-												"name": "Note of Protection",
-												"entries": [
-													"Immediately after the creature rolls the Bardic Inspiration die and adds it to a saving throw, the creature can expend the note to gain temporary hit points equal to the number rolled on the Bardic Inspiration die + your Charisma modifier, provided the creature doesn't already have temporary hit points."
-												]
-											},
-											{
-												"type": "entries",
-												"name": "Note of Ingenuity",
-												"entries": [
-													"When the creature rolls the Bardic Inspiration die to add it to an ability check, the creature can expend the note to roll the Bardic Inspiration die again and choose which roll to use."
+												"type": "list",
+												"style": "list-hang-notitle",
+												"items": [
+													{
+														"type": "item",
+														"name": "Bite",
+														"entry": "Your mouth transforms into a bestial snout or great mandibles (your choice). Your bite deals {@dice 1d8} piercing damage on a hit. Once on each of your turns when you damage a creature with your bite, you regain a number of hit points equal to your Constitution modifier (minimum of 1 hit point)."
+													},
+													{
+														"type": "item",
+														"name": "Claws",
+														"entry": "Your hands transform into claws, which deal {@dice 1d6} slashing damage on a hit. When you take the {@action Attack} action on your turn and make an attack with your claws, you can make one additional attack using your claws as part of the same action."
+													},
+													{
+														"type": "item",
+														"name": "Tail",
+														"entry": "You grow a lashing, spiny tail, which deals {@dice 1d12} piercing damage on a hit and has the reach property."
+													}
 												]
 											}
 										]
@@ -1627,13 +1668,19 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Animating Performance",
+										"name": "Bestial Soul",
 										"entries": [
-											"{@i 6th-level College of Creation feature}",
-											"Your mastery over the Song of Creation allows you to magically bring items to life. As an action, you can target a Large or smaller nonmagical item you can see within 30 feet of you and animate it. The animate item uses the {@creature Dancing Item|UA2020SubclassesPt2} stat block and is under your control for 1 hour or until it is reduced to 0 hit points.",
-											"In combat, the item shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take one of the actions in its stat block or the {@action Dash}, {@action Disengage}, {@action Help}, {@action Hide}, or {@action Search} action.",
-											"When you use your Bardic Inspiration feature, you can command which action your animated item takes as part of the same bonus action.",
-											"Once you animate an item with this feature, you can't do so again until you finish a long rest or until you expend a spell slot of 3rd level or higher to use this feature. You can have only one item animated by this feature at a time; if you use this action and already have a {@creature dancing item|UA2020SubclassesPt2} from this feature, the first one immediately becomes inanimate."
+											"{@i 6th-level Path of the Beast feature}",
+											"The feral spirit within you grows in power, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+											"You can also call on the feral spirit to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest:",
+											{
+												"type": "list",
+												"items": [
+													"You gain a swimming speed equal to your walking speed, and you can breathe underwater.",
+													"You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+													"When you jump, you can make a Strength ({@skill Athletics}) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn."
+												]
+											}
 										]
 									}
 								]
@@ -1644,12 +1691,32 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Performance of Creation",
+										"name": "Infectious Fury",
 										"entries": [
-											"{@i 14th-level College of Creation feature}",
-											"Your performance can manipulate the magic of creation, briefly transforming the world around you. As an action, you can create one nonmagical item of your choice in an unoccupied space within 10 feet of you. The item must appear on a surface or in a liquid that can support it. The gp value of the item can't be more than 20 times your bard level and must be Large or smaller. Tiny glimmering, intangible notes float around it, and a creature can faintly hear music when touching it. For examples of items you can create, see the Armor, Weapons, Adventuring Gear, Tools, and Mounts and Vehicles tables in chapter 5, \"Equipment,\" of the Player's Handbook.",
-											"The created item disappears at the end of your next turn, unless you use your action to maintain it. Each time you use your action in this way, the item's duration is extended to the end of your next turn, up to a maximum of 1 minute. If you maintain the item for the full minute, it continues to exist for a number of hours equal to your bard level.",
-											"Once you create an item with this feature, you can't do so again until you finish a long rest or until you expend a spell slot of 5th level or higher to use this feature. You can have only one item created by this feature at a time; if you use this action and already have an item from this feature, the first one immediately vanishes."
+											"{@i 10th-level Path of the Beast feature}",
+											"When you hit a creature with your natural weapons while you are raging, the spirit within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):",
+											{
+												"type": "list",
+												"items": [
+													"The target must use its reaction to make a melee attack against another creature of your choice that you can see.",
+													"Target takes {@dice 2d12} psychic damage. You can use this feature a number of times equal to your Constitution modifier (a minimum of once)."
+												]
+											},
+											"You regain all expended uses when you finish a long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Call the Hunt",
+										"entries": [
+											"{@i 14th-level Path of the Beast feature}",
+											"The beast within grows so powerful that you can spread its ferocity to your allies. When you enter your rage, you can choose a number of willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). Until your rage ends, the chosen creatures gain the Reckless {@action Attack} feature and you have advantage on saving throws against being {@condition frightened}. You also gain 5 temporary hit points for each creature that accepts the benefit. You can use this feature a number of times equal to your Constitution modifier (a minimum of once). You regain all expended uses when you finish a long rest."
 										]
 									}
 								]
@@ -1660,47 +1727,48 @@
 			],
 			"fluff": [
 				{
-					"name": "Bard",
+					"name": "Barbarian",
 					"type": "section",
 					"entries": [
-						"Humming as she traces her fingers over an ancient monument in a long-forgotten ruin, a half-elf in rugged leathers finds knowledge springing into her mind, conjured forth by the magic of her song—knowledge of the people who constructed the monument and the mythic saga it depicts.",
-						"A stern human warrior bangs his sword rhythmically against his scale mail, setting the tempo for his war chant and exhorting his companions to bravery and heroism. The magic of his song fortifies and emboldens them.",
-						"Laughing as she tunes her cittern, a gnome weaves her subtle magic over the assembled nobles, ensuring that her companions' words will be well received.",
-						"Whether scholar, skald, or scoundrel, a bard weaves magic through words and music to inspire allies, demoralize foes, manipulate minds, create illusions, and even heal wounds.",
+						"A tall human tribesman strides through a blizzard, draped in fur and hefting his axe. He laughs as he charges toward the frost giant who dared poach his people's elk herd.",
+						"A half-orc snarls at the latest challenger to her authority over their savage tribe, ready to break his neck with her bare hands as she did to the last six rivals.",
+						"Frothing at the mouth, a dwarf slams his helmet into the face of his drow foe, then turns to drive his armored elbow into the gut of another.",
+						"These barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury. More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm, the churning turmoil of the sea.",
+						"For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.",
 						{
 							"type": "entries",
-							"name": "Music and Magic",
+							"name": "Primal Instinct",
 							"entries": [
-								"In the worlds of D&D, words and music are not just vibrations of air, but vocalizations with power all their own. The bard is a master of song, speech, and the magic they contain. Bards say that the multiverse was spoken into existence, that the words of the gods gave it shape, and that echoes of these primordial Words of Creation still resound throughout the cosmos. The music of bards is an attempt to snatch and harness those echoes, subtly woven into their spells and powers.",
-								"The greatest strength of bards is their sheer versatility. Many bards prefer to stick to the sidelines in combat, using their magic to inspire their allies and hinder their foes from a distance. But bards are capable of defending themselves in melee if necessary, using their magic to bolster their swords and armor. Their spells lean toward charms and illusions rather than blatantly destructive spells. They have a wide-ranging knowledge of many subjects and a natural aptitude that lets them do almost anything well. Bards become masters of the talents they set their minds to perfecting, from musical performance to esoteric knowledge."
+								"People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying one's own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness. The strong embrace their animal nature—keen instincts, primal physicality, and ferocious rage. Barbarians are uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle, or grasslands where their tribes live and hunt.",
+								"Barbarians come alive in the chaos of combat. They can enter a berserk state where rage takes over, giving them superhuman strength and resilience. A barbarian can draw on this reservoir of fury only a few times without resting, but those few rages are usually sufficient to defeat whatever threats arise."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Learning from Experience",
+							"name": "A Life of Danger",
 							"entries": [
-								"True bards are not common in the world. Not every minstrel singing in a tavern or jester cavorting in a royal court is a bard. Discovering the magic hidden in music requires hard study and some measure of natural talent that most troubadours and jongleurs lack. It can be hard to spot the difference between these performers and true bards, though. A bard's life is spent wandering across the land gathering lore, telling stories, and living on the gratitude of audiences, much like any other entertainer. But a depth of knowledge, a level of musical skill, and a touch of magic set bards apart from their fellows.",
-								"Only rarely do bards settle in one place for long, and their natural desire to travel—to find new tales to tell, new skills to learn, and new discoveries beyond the horizon—makes an adventuring career a natural calling. Every adventure is an opportunity to learn, practice a variety of skills, enter long-forgotten tombs, discover lost works of magic, decipher old tomes, travel to strange places, or encounter exotic creatures. Bards love to accompany heroes to witness their deeds firsthand. A bard who can tell an awe-inspiring story from personal experience earns renown among other bards. Indeed, after telling so many stories about heroes accomplishing mighty deeds, many bards take these themes to heart and assume heroic roles themselves."
+								"Not every member of the tribes deemed \"barbarians\" by scions of civilized society has the barbarian class. A true barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a protector of the people and a leader in times of war. Life in the wild places of the world is fraught with peril: rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their people don't have to.",
+								"Their courage in the face of danger makes barbarians perfectly suited for adventuring. Wandering is often a way of life for their native tribes, and the rootless life of the adventurer is little hardship for a barbarian. Some barbarians miss the close-knit family structures of the tribe, but eventually find them replaced by the bonds formed among the members of their adventuring parties."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating a Bard",
+							"name": "Creating a Barbarian",
 							"entries": [
-								"Bards thrive on stories, whether those stories are true or not. Your character's background and motivations are not as important as the stories that he or she tells about them. Perhaps you had a secure and mundane childhood. There's no good story to be told about that, so you might paint yourself as an orphan raised by a hag in a dismal swamp. Or your childhood might be worthy of a story. Some bards acquire their magical music through extraordinary means, including the inspiration of fey or other supernatural creatures.",
-								"Did you serve an apprenticeship, studying under a master, following the more experienced bard until you were ready to strike out on your own? Or did you attend a college where you studied bardic lore and practiced your musical magic? Perhaps you were a young runaway or orphan, befriended by a wandering bard who became your mentor. Or you might have been a spoiled noble child tutored by a master. Perhaps you stumbled into the clutches of a hag, making a bargain for a musical gift in addition to your life and freedom, but at what cost?",
+								"When creating a barbarian character, think about where your character comes from and his or her place in the world. Talk with your DM about an appropriate origin for your barbarian. Did you come from a distant land, making you a stranger in the area of the campaign? Or is the campaign set in a rough-and-tumble frontier where barbarians are common?",
+								"What led you to take up the adventuring life? Were you lured to settled lands by the promise of riches? Did you join forces with soldiers of those lands to face a shared threat? Did monsters or an invading horde drive you out of your homeland, making you a rootless refugee? Perhaps you were a prisoner of war, brought in chains to \"civilized\" lands and only now able to win your freedom. Or you might have been cast out from your people because of a crime you committed, a taboo you violated, or a coup that removed you from a position of authority.",
 								{
 									"type": "entries",
 									"name": "Quick Build",
 									"entries": [
-										"You can make a bard quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, choose the {@background entertainer} background. Third, choose the {@spell dancing lights} and {@spell vicious mockery} cantrips, along with the following 1st-level spells: {@spell charm person}, {@spell detect magic}, {@spell healing word}, and {@spell thunderwave}."
+										"You can make a barbarian quickly by following these suggestions. First, put your highest ability score in Strength, followed by Constitution. Second, choose the {@background outlander} background."
 									]
 								}
 							]
 						}
 					],
 					"source": "PHB",
-					"page": 51
+					"page": 46
 				},
 				{
 					"type": "section",
@@ -1708,27 +1776,25 @@
 						{
 							"type": "quote",
 							"entries": [
-								"Music is the fruit of the divine tree that vibrates with the Words of Creation. But the question I ask you is, can a bard go to the root of this tree? Can one tap into the source of that power? Ah, then what manner of music they would bring to this world!"
+								"I have witnessed the indomitable performance of barbarians on the field of battle, and it makes me wonder what force lies at the heart of their rage."
 							],
-							"by": "Fletcher Danairia, master bard"
+							"by": "Seret, archwizard"
 						},
-						"Bards bring levity during grave times; they impart wisdom to offset ignorance; and they make the ridiculous seem sublime. Bards are preservers of ancient history, their songs and tales perpetuating the memory of great events down through time—knowledge so important that it is memorized and passed along as oral history, to survive even when no written record remains.",
-						"It is also the bard's role to chronicle smaller and more contemporary events—the stories of today's heroes, including their feats of valor as well as their less than impressive failures.",
-						"Of course, the world has many people who can carry a tune or tell a good story, and there's much more to any adventuring bard than a glib tongue and a melodious voice. Yet what truly sets bards apart from others—and from one another—are the style and substance of their performances.",
-						"To grab and hold the attention of an audience, bards are typically flamboyant and outgoing when they perform. The most famous of them are essentially the D&D world's equivalent of pop stars. If you're playing a bard, consider using one of your favorite musicians as a role model for your character.",
-						"You can add some unique aspects to your bard character by considering the suggestions that follow.",
+						"The anger felt by a normal person resembles the rage of a barbarian in the same way that a gentle breeze is akin to a furious thunderstorm. The barbarian's driving force comes from a place that transcends mere emotion, making its manifestation all the more terrible. Whether the impetus for the fury comes entirely from within or from forging a link with a spirit animal, a raging barbarian becomes able to perform supernatural feats of strength and endurance. The outburst is temporary, but while it lasts, it takes over body and mind, driving the barbarian on despite peril and injury, until the last enemy falls.",
+						"It can be tempting to play a barbarian character that is a straightforward application of the classic archetype—a brute, and usually a dimwitted one at that, who rushes in where others fear to tread. But not all the barbarians in the world are cut from that cloth, so you can certainly put your own spin on things. Either way, consider adding some flourishes to make your barbarian stand out from all others; see the following sections for some ideas.",
 						{
 							"type": "entries",
-							"name": "Defining Work",
+							"name": "Personal Totems",
 							"entries": [
-								"Every successful bard is renowned for at least one piece of performance art, typically a song or a poem that is popular with everyone who hears it. These performances are spoken about for years by those who view them, and some spectators have had their lives forever changed because of the experience.",
-								"If your character is just starting out, your ultimate defining work is likely in the future. But in order to make any sort of living at your profession, chances are you already have a piece or two in your repertoire that have proven to be audience pleasers.",
+								"Barbarians tend to travel light, carrying little in the way of personal effects or other unnecessary gear. The few possessions they do carry often include small items that have special significance. A personal totem is significant because it has a mystical origin or is tied to an important moment in the character's life—perhaps a remembrance from the barbarian's past or a harbinger of what lies ahead.",
+								"A personal totem of this sort might be associated with a barbarian's spirit animal, or might actually be the totem object for the animal, but such a connection is not essential. One who has a bear totem spirit, for instance, could still carry an eagle's feather as a personal totem.",
+								"Consider creating one or more personal totems for your character—objects that hold a special link to your character's past or future. Think about how a totem might affect your character's actions.",
 								{
 									"type": "table",
-									"caption": "Defining Work",
+									"caption": "Personal Totems",
 									"colLabels": [
 										"{@dice d6}",
-										"Defining Work"
+										"Totem"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -1742,7 +1808,7 @@
 													"exact": 1
 												}
 											},
-											"\"The Three Flambinis,\" a ribald song concerning mistaken identities and unfettered desire"
+											"A tuft of fur from a solitary wolf that you befriended during a hunt"
 										],
 										[
 											{
@@ -1751,7 +1817,7 @@
 													"exact": 2
 												}
 											},
-											"\"Waltz of the Myconids,\" an upbeat tune that children in particular enjoy"
+											"Three eagle feathers given to you by a wise shaman, who told you they would play a role in determining your fate"
 										],
 										[
 											{
@@ -1760,7 +1826,7 @@
 													"exact": 3
 												}
 											},
-											"\"Asmodeus's Golden Arse,\" a dramatic poem you claim was inspired by your personal visit to Avernus"
+											"A necklace made from the claws of a young cave bear that you slew singlehandedly as a child"
 										],
 										[
 											{
@@ -1769,7 +1835,7 @@
 													"exact": 4
 												}
 											},
-											"\"The Pirates of Luskan,\" your firsthand account of being kidnapped by sea reavers as a child"
+											"A small leather pouch holding three stones that represent your ancestors"
 										],
 										[
 											{
@@ -1778,7 +1844,7 @@
 													"exact": 5
 												}
 											},
-											"\"A Hoop, Two Pigeons, and a Hell Hound,\" a subtle parody of an incompetent noble"
+											"A few small bones from the first beast you killed, tied together with colored wool"
 										],
 										[
 											{
@@ -1787,7 +1853,7 @@
 													"exact": 6
 												}
 											},
-											"\"A Fool in the Abyss,\" a comedic poem about a jester's travels among demons"
+											"An egg-sized stone in the shape of your spirit animal that appeared one day in your belt pouch"
 										]
 									]
 								}
@@ -1795,16 +1861,16 @@
 						},
 						{
 							"type": "entries",
-							"name": "Instrument",
+							"name": "Tattoos",
 							"entries": [
-								"In a bard's quest for the ultimate performance and the highest acclaim, one's instrument is at least as important as one's vocal ability. The instrument's quality of manufacture is a critical factor, of course; the best ones make the best music, and some bards are continually on the lookout for an improvement. Perhaps just as important, though, is the instrument's own entertainment value; those that are bizarrely constructed or made of exotic materials are likely to leave a lasting impression on an audience.",
-								"You might have an \"off the rack\" instrument, perhaps because it's all you can afford right now. Or, if your first instrument was gifted to you, it might be of a more elaborate sort. Are you satisfied with the instrument you have, or do you aspire to replace it with something truly distinctive?",
+								"The members of many barbarian clans decorate their bodies with tattoos, each of which represents a significant moment in the life of the bearer or the bearer's ancestors, or which symbolizes a feeling or an attitude. As with personal totems, a barbarian's tattoos might or might not be related to an animal spirit.",
+								"Each tattoo a barbarian displays contributes to that individual's identity. If your character wears tattoos, what do they look like, and what do they represent?",
 								{
 									"type": "table",
-									"caption": "Instrument",
+									"caption": "Tattoos",
 									"colLabels": [
 										"{@dice d6}",
-										"Instrument"
+										"Tattoo"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -1818,7 +1884,7 @@
 													"exact": 1
 												}
 											},
-											"A masterfully crafted halfling fiddle"
+											"The wings of an eagle are spread wide across your upper back."
 										],
 										[
 											{
@@ -1827,7 +1893,7 @@
 													"exact": 2
 												}
 											},
-											"A mithral horn made by elves"
+											"Etched on the backs of your hands are the paws of a cave bear."
 										],
 										[
 											{
@@ -1836,7 +1902,7 @@
 													"exact": 3
 												}
 											},
-											"A zither made with drow spider silk"
+											"The symbols of your clan are displayed in viny patterns along your arms."
 										],
 										[
 											{
@@ -1845,7 +1911,7 @@
 													"exact": 4
 												}
 											},
-											"An orcish drum"
+											"The antlers of an elk are inked across your back."
 										],
 										[
 											{
@@ -1854,7 +1920,7 @@
 													"exact": 5
 												}
 											},
-											"A wooden bullywug croak box"
+											"Images of your spirit animal are tattooed along your weapon arm and hand."
 										],
 										[
 											{
@@ -1863,7 +1929,7 @@
 													"exact": 6
 												}
 											},
-											"A tinker's harp of gnomish design"
+											"The eyes of a wolf are marked on your back to help you see and ward off evil spirits."
 										]
 									]
 								}
@@ -1871,16 +1937,18 @@
 						},
 						{
 							"type": "entries",
-							"name": "Embarrassment",
+							"name": "Superstitions",
 							"entries": [
-								"Almost every bard has suffered at least one bad experience in front of an audience, and chances are you're no exception. No one becomes famous right away, after all; perhaps you had a few small difficulties early in your career, or maybe it took you a while to restore your reputation after one agonizing night when the fates conspired to bring about your theatrical ruin.",
-								"The ways that a performance can go wrong are as varied as the fish in the sea. No matter what sort of disaster might occur, however, a bard has the courage and the confidence to rebound from it—either pressing on with the show (if possible) or promising to come back tomorrow with a new performance that's guaranteed to please.",
+								"Barbarians vary widely in how they understand life. Some follow gods and look for guidance from those deities in the cycles of nature and the animals they encounter. These barbarians believe that spirits inhabit the plants and animals of the world, and the barbarians look to them for omens and power.",
+								"Other barbarians trust only in the blood that runs in their veins and the steel they hold in their hands. They have no use for the invisible world, instead relying on their senses to hunt and survive like the wild beasts they emulate.",
+								"Both of these attitudes can give rise to superstitions. These beliefs are often passed down within a family or shared among the members of a clan or a hunting group.",
+								"If your barbarian character has any superstitions, were they ingrained in you by your family, or are they the result of personal experience?",
 								{
 									"type": "table",
-									"caption": "Embarrassment",
+									"caption": "Superstition",
 									"colLabels": [
 										"{@dice d6}",
-										"Embarrassment"
+										"Superstition"
 									],
 									"colStyles": [
 										"col-1 text-center",
@@ -1894,7 +1962,7 @@
 													"exact": 1
 												}
 											},
-											"The time when your comedic song, \"Big Tom's Hijinks\"—which, by the way, you thought was brilliant—did not go over well with Big Tom"
+											"If you disturb the bones of the dead, you inherit all the troubles that plagued them in life."
 										],
 										[
 											{
@@ -1903,7 +1971,7 @@
 													"exact": 2
 												}
 											},
-											"The matinee performance when a circus's owlbear got loose and terrorized the crowd"
+											"Never trust a wizard. They're all devils in disguise, especially the friendly ones."
 										],
 										[
 											{
@@ -1912,7 +1980,7 @@
 													"exact": 3
 												}
 											},
-											"When your opening song was your enthusiastic but universally hated rendition of \"Song of the Froghemoth\""
+											"Dwarves have lost their spirits, and are almost like the undead. That's why they live underground."
 										],
 										[
 											{
@@ -1921,7 +1989,7 @@
 													"exact": 4
 												}
 											},
-											"The first and last public performance of \"Mirt, Man about Town\""
+											"Magical things bring trouble. Never sleep with a magic object within ten feet of you."
 										],
 										[
 											{
@@ -1930,7 +1998,7 @@
 													"exact": 5
 												}
 											},
-											"The time on stage when your wig caught fire and you threw it down—which set fire to the stage"
+											"When you walk through a graveyard, be sure to wear silver, or a ghost might jump into your body."
 										],
 										[
 											{
@@ -1939,54 +2007,17 @@
 													"exact": 6
 												}
 											},
-											"When you sat on your lute by mistake during the final stanza of \"Starlight Serenade\""
+											"If an elf looks you in the eyes, she's trying to read your thoughts."
 										]
-									]
-								}
-							]
-						},
-						{
-							"type": "entries",
-							"name": "A Bard's Muse",
-							"entries": [
-								"Naturally, every bard has a repertoire of songs and stories. Some bards are generalists who can draw from a wide range of topics for each performance, and who take pride in their versatility. Others adopt a more personal approach to their art, driven by their attachment to a muse—a particular concept that inspires much of what those bards do in front of an audience.",
-								"A bard who follows a muse generally does so to gain a deeper understanding of what that muse represents and how to best convey that understanding to others through performance.",
-								"If your bard character has a muse, it could be one of the three described here, or one of your own devising.",
-								{
-									"type": "entries",
-									"entries": [
-										{
-											"type": "entries",
-											"name": "Nature",
-											"entries": [
-												"You feel a kinship with the natural world, and its beauty and mystery inspire you. For you, a tree is deeply symbolic, its roots delving into the dark unknown to draw forth the power of the earth, while its branches reach toward the sun to nourish their flowers and fruit. Nature is the ancient witness who has seen every kingdom rise and fall, even those whose names have been forgotten and wait to be rediscovered. The gods of nature share their secrets with druids and sages, opening their hearts and minds to new ways of seeing, and as with those individuals, you find that your creativity blossoms while you wander in an open field of waving grass or walk in silent reverence through a grove of ancient oaks."
-											]
-										},
-										{
-											"type": "entries",
-											"name": "Love",
-											"entries": [
-												"You are on a quest to identify the essence of true love. Though you do not disdain the superficial love of flesh and form, the deeper form of love that can inspire thousands or bring joy to one's every moment is what you are interested in. Love of this sort takes on many forms, and you can see its presence everywhere—from the sparkling of a beautiful gem to the song of a simple fisher thanking the sea for its bounty. You are on the trail of love, that most precious and mysterious of emotions, and your search fills your stories and your songs with vitality and passion."
-											]
-										},
-										{
-											"type": "entries",
-											"name": "Conflict",
-											"entries": [
-												"Drama embodies conflict, and the best stories have conflict as a key element. From the morning-after tale of a tavern brawl to the saga of an epic battle, from a lover's spat to a rift between powerful dynasties, conflict is what inspires tale-tellers like you to create your best work. Conflict can bring out the best in some people, causing their heroic nature to shine forth and transform the world, but it can cause others to gravitate toward darkness and fall under the sway of evil. You strive to experience or witness all forms of conflict, great and small, so as to study this eternal aspect of life and immortalize it in your words and music."
-											]
-										}
 									]
 								}
 							]
 						}
 					],
 					"source": "XGE",
-					"page": 12
+					"page": 8
 				}
 			]
 		}
-
-	
 	]
 }
