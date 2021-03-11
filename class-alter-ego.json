@@ -80,75 +80,75 @@
 						],
 						[
 							1,
-							"2"
+							2
 						],
 						[
 							2,
-							"2"
+							2
 						],
 						[
 							2,
-							"3"
+							3
 						],
 						[
 							3,
-							"3"
+							3
 						],
 						[
 							3,
-							"3"
+							3
 						],
 						[
 							4,
-							"3"
+							3
 						],
 						[
 							4,
-							"4"
+							4
 						],
 						[
 							5,
-							"4"
+							4
 						],
 						[
 							5,
-							"4"
+							4
 						],
 						[
 							6,
-							"4"
+							4
 						],
 						[
 							6,
-							"5"
+							5
 						],
 						[
 							7,
-							"5"
+							5
 						],
 						[
 							7,
-							"5"
+							5
 						],
 						[
 							8,
-							"5"
+							5
 						],
 						[
 							8,
-							"6"
+							6
 						],
 						[
 							9,
-							"6"
+							6
 						],
 						[
 							9,
-							"6"
+							6
 						],
 						[
 							10,
-							"6"
+							6
 						]
 					
 					]
@@ -233,7 +233,7 @@
 			]
 		},
 		{
-			"name": "Ability Score Improvements",
+			"name": "Ability Score Improvement",
 			"source": "SoM",
 			"className": "Alter Ego",
 			"classSource": "SoM",
@@ -343,7 +343,7 @@
 			]
 		},
 		{
-			"name": "Quick Change",
+			"name": "Quick Change (2)",
 			"source": "SoM",
 			"className": "Alter Ego",
 			"classSource": "SoM",
