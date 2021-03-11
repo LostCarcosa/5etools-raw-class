@@ -1,0 +1,211 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Spheres_Of_Might HEY BOYO GO THROUGH AND ACTUALLY FINISH THIS SECTION AT SOME POINT",
+				"abbreviation": "SoM",
+				"full": "Spheres of Might",
+				"authors": [
+					"First Author",
+					"Second Author"
+				],
+				"convertedBy": [
+					"StarsofCarcosa"
+				],
+				"version": "1.0.8",
+				"url": "https://server.domain",
+				"targetSchema": "1.0.8"
+			}
+		],
+		"dateAdded": 1549715846, 
+		"dateLastModified": 1549715846
+	},
+	"class": [
+		{
+			"name": "Alter Ego",
+			"source": "Spheres of Might",
+			"proficiency": [
+				"con",
+				"cha"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light"
+				],
+				"weapons": [
+					"simple"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"sleight of hand",
+								"stealth",
+								"arcana",
+								"history",
+								"investigation",
+								"nature",
+								"religion",
+								"animal handling",
+								"insight",
+								"medicine",
+								"perception",
+								"survival",
+								"deception",
+								"intimidation",
+								"performance",
+								"persuasion"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"classFeatures": [
+				"Persona|Alter Ego|SoM|1",
+				{
+					"classFeature": "Alter Ego Archetype|Alter Ego|SoM|1",
+					"gainSubclassFeature": true
+				},
+				"Persona Talents|Alter Ego|SoM|3",
+				"Ability Score Improvement|Alter Ego|SoM|4",
+				"Extra Attack|Alter Ego|SoM|5",
+				{
+					"classFeature": "Archetype Power|Alter Ego|SoM|6",
+					"gainSubclassFeature": true
+				},
+				"Trope Benefit|Alter Ego|SoM|7",
+				"Ability Score Improvement|Alter Ego|SoM|8",
+				"Quick Change|Alter Ego|SoM|10",
+				"Archetype Power|Alter Ego|SoM|11",
+				"Ability Score Improvement|Alter Ego|SoM|12",
+				{
+					"classFeature": "Archetype Power|Alter Ego|SoM|14",
+					"gainSubclassFeature": true
+				},
+				"Trope Benefit|Alter Ego|SoM|15",
+				"Ability Score Improvement|Alter Ego|SoM|16",
+				"Quick Change (2)|Alter Ego|SoM|18",
+				"Ability Score Improvement|Alter Ego|SoM|19",
+				{
+					"classFeature": "Archetype Power|Alter Ego|SoM|20",
+					"gainSubclassFeature": true
+				}
+			],
+			"classTableGroups":[
+				{
+					"colLabels":[
+						"Martial Talents ADD LINK",
+						"Persona Talents ADD LINK"
+					],
+					"rows": [
+						[
+							0,
+							"-"
+						],
+						[
+							1,
+							"-"
+						],
+						[
+							1,
+							"2"
+						],
+						[
+							2,
+							"2"
+						],
+						[
+							2,
+							"3"
+						],
+						[
+							3,
+							"3"
+						],
+						[
+							3,
+							"3"
+						],
+						[
+							4,
+							"3"
+						],
+						[
+							4,
+							"4"
+						],
+						[
+							5,
+							"4"
+						],
+						[
+							5,
+							"4"
+						],
+						[
+							6,
+							"4"
+						],
+						[
+							6,
+							"5"
+						],
+						[
+							7,
+							"5"
+						],
+						[
+							7,
+							"5"
+						],
+						[
+							8,
+							"5"
+						],
+						[
+							8,
+							"6"
+						],
+						[
+							9,
+							"6"
+						],
+						[
+							9,
+							"6"
+						],
+						[
+							10,
+							"6"
+						]
+					
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "test",
+			"source": "SoM",
+			"className": "Alter Ego",
+			"classSource": "SoM",
+			"level": 1,
+			"entries": [
+				"test"
+			]
+		}
+	]
+
+
+
+
+
+
+
+
+
+}
